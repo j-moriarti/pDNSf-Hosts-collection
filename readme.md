@@ -7,8 +7,9 @@
 ### (GitHub source can be found ["Here"](https://github.com/IngoZenz/personaldnsfilter))
 
 # Note: This hosts file is extremely large !!! more than 60MB !!! YOU HAVE BEEN WARNED AGAIN!!!
- 
-  
+
+## Auto Updates Every 24hrs
+
 ## Download multi-part Raw hosts
 | Hosts | Raw link | Size |
 |:---------:|:-------:|:-------:|
