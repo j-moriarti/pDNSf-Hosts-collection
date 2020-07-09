@@ -5,3 +5,5 @@
 
 ### This hosts file is specially optimized for ["PersonalDNSFilter"](https://www.zenz-solutions.de/personaldnsfilter/) app.
 ### (GitHub source can be found ["Here"](https://github.com/IngoZenz/personaldnsfilter))
+
+# Note: This hosts file is extremely large !!! more than 60MB !!! YOU HAVE BEEN WARNED AGAIN!!!
