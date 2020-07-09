@@ -22,11 +22,11 @@ echo -e "\n" | tee -a *.txt.raw
 cat *.txt.raw | tr '[:upper:]' '[:lower:]' > COMBINED-RAW-HOSTS.TXT
 
 cd ..
+rm -f Processing-Phase/COMBINED-RAW-HOSTS.TXT
 mv RAW-Filters/COMBINED-RAW-HOSTS.TXT Processing-Phase/COMBINED-RAW-HOSTS.TXT
 
 
 cd Processing-Phase/
-rm -f COMBINED-RAW-HOSTS.TXT
 rm -f CIDR-IPs.txt
 sed '/^#/d;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\/[0-9]\{1,2\}$/!d' COMBINED-RAW-HOSTS.TXT > CIDR-IPs.txt
 
