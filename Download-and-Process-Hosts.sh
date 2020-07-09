@@ -67,6 +67,7 @@ rm -f dga-feed-all.csv
 
 echo -e "\n" | tee -a *.txt.raw
 cat *.txt.raw | tr '[:upper:]' '[:lower:]' > COMBINED-RAW-HOSTS.TXT
+rm -f *.txt.raw
 
 cd ..
 rm -f Processing-Phase/COMBINED-RAW-HOSTS.TXT
@@ -80,6 +81,7 @@ sed '/^#/d;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\/[0-9]\{1,2\
 rm -f 1-cleaned.txt
 sed '/^#\|^$\|^\t*$\|^!\|^||\|^|http\|\^\|(\|)\|\[\|\]\|{\|}\|=\|@\|<\|>\|%\|\$\|,\|;\|\/\|^\.\|\.$/d' COMBINED-RAW-HOSTS.TXT > 1-cleaned.txt
 
+rm -f COMBINED-RAW-HOSTS.TXT
 rm -f 2-no-www.txt
 rm -f 2-temp.txt
 rm -f Wildcards.txt
@@ -103,6 +105,8 @@ sed '/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' 6-final-outpu
 
 cd ..
 rm -f pDNSf-hosts.txt
+rm -f pDNSf-hosts.txt.gz
+rm -f pDNSf-hosts-part*.txt
 rm -f Wildcards.txt
 rm -f CIDR-IPs.txt
 rm -f just-IPs.txt
@@ -111,4 +115,6 @@ mv Processing-Phase/Wildcards.txt Wildcards.txt
 mv Processing-Phase/CIDR-IPs.txt CIDR-IPs.txt
 mv Processing-Phase/just-IPs.txt just-IPs.txt
 
+split -a 1 -C 25M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
+gzip -f -9 pDNSf-hosts.txt
 echo "Finished."
