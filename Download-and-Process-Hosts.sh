@@ -115,6 +115,38 @@ mv Processing-Phase/Wildcards.txt Wildcards.txt
 mv Processing-Phase/CIDR-IPs.txt CIDR-IPs.txt
 mv Processing-Phase/just-IPs.txt just-IPs.txt
 
+hostssize=$(ls -lah pDNSf-hosts.txt | awk '{print $5}')
+hostsnum=$(wc -l < pDNSf-hosts.txt)
+wildcardsize=$(ls -lah Wildcards.txt | awk '{print $5}')
+wildcardnum=$(wc -l < Wildcards.txt)
+cidrsize=$(ls -lah CIDR-IPs.txt | awk '{print $5}')
+cidrnum=$(wc -l < CIDR-IPs.txt)
+ipsize=$(ls -lah just-IPs.txt | awk '{print $5}')
+ipnum=$(wc -l < just-IPs.txt)
+
 split -a 1 -C 25M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
+
+part0size=0
+if [ -f pDNSf-hosts-part0.txt ]; then
+    part0size=$(ls -lah pDNSf-hosts-part0.txt | awk '{print $5}')
+fi
+
+part1size=0
+if [ -f pDNSf-hosts-part1.txt ]; then
+    part1size=$(ls -lah pDNSf-hosts-part1.txt | awk '{print $5}')
+fi
+
+part2size=0
+if [ -f pDNSf-hosts-part2.txt ]; then
+    part2size=$(ls -lah pDNSf-hosts-part2.txt | awk '{print $5}')
+fi
+
+
 gzip -f -9 pDNSf-hosts.txt
+
+gzsize=$(ls -lah pDNSf-hosts.txt.gz | awk '{print $5}')
+
+rm -f readme.md
+sed -e "s/_hostssize_/$hostssize/g" -e "s/_hostsnum_/$hostsnum/g" -e "s/_wildcardsize_/$wildcardsize/g" -e "s/_wildcardnum_/$wildcardnum/g" -e "s/_cidrsize_/$cidrsize/g" -e "s/_cidrnum_/$cidrnum/g" -e "s/_ipsize_/$ipsize/g" -e "s/_ipnum_/$ipnum/g" -e "s/_part0size_/$part0size/g" -e "s/_part1size_/$part1size/g" -e "s/_part2size_/$part2size/g" -e "s/_gzsize_/$gzsize/g" template > readme.md
+
 echo "Finished."
