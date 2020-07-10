@@ -5,8 +5,10 @@ name: CI
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  pull_request:
-    branches: [ master ]
+  push:
+    paths:
+      - '**.sh'
+      - '**.yml'
   schedule:
             - cron:  "0 0 * * *"
 
@@ -22,7 +24,6 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
       with:
-        ref: ${{ github.head_ref }}
         lfs: true
     - name: Checkout LFS objects
       run: git lfs checkout
