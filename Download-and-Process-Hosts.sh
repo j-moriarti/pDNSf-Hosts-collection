@@ -72,7 +72,7 @@ echo $(ls -1q *.txt.raw | wc -l) sources
 #find *.txt.raw -type f -exec wc -lc {} +
 #ls -hs1 *.txt
 #paste $(ls -1 *.txt | xargs wc -l | awk '{print $1}') $(ls -hs1 *.txt) | column -s $'\t' -tn
-echo -e "Lines \n________" > tmp1
+echo -e "Domains \n________" > tmp1
 ls -1 *.txt.raw | xargs wc -l | awk '{print $1 }' >> tmp1
 echo -e "Size\n_________________________________________________" > tmp2
 ls -hs1 *.txt.raw >> tmp2
