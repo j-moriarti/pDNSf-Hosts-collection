@@ -131,18 +131,23 @@ split -a 1 -C 25M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 part0size=0
 if [ -f pDNSf-hosts-part0.txt ]; then
     part0size=$(ls -lah pDNSf-hosts-part0.txt | awk '{print $5}')
+else
+    touch pDNSf-hosts-part0.txt
 fi
 
 part1size=0
 if [ -f pDNSf-hosts-part1.txt ]; then
     part1size=$(ls -lah pDNSf-hosts-part1.txt | awk '{print $5}')
+else
+    touch pDNSf-hosts-part1.txt
 fi
 
 part2size=0
 if [ -f pDNSf-hosts-part2.txt ]; then
-    part2size=$(ls -lah pDNSf-hosts-part2.txt | awk '{print $5}')
+    part2size=$(ls -lah pDNSf-hosts-part2.txt | awk '{print $5}')     
+else
+    touch pDNSf-hosts-part2.txt
 fi
-
 
 gzip -f -9 pDNSf-hosts.txt
 
