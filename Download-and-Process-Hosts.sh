@@ -64,10 +64,22 @@ gzip -N -d dga-feed.gz
 sed 's/,Domain .*$//' dga-feed-all.csv > dga-feed.txt.raw
 rm -f dga-feed-all.csv
 
-echo $(ls -1q *.txt.raw | wc -l) sources
-ls -lah *.txt.raw | awk '{print $5 " " $9}'
+echo "" | tee -a *.txt.raw
 
-echo -e "\n" | tee -a *.txt.raw
+echo $(ls -1q *.txt.raw | wc -l) sources
+#ls -lah *.txt.raw | awk '{print $5 " " $9}' | sort -k2 | sed -e "s/ /\t/g"
+#ls -lah *.txt.raw | awk '{print $9}' | xargs wc -l > stats
+#find *.txt.raw -type f -exec wc -lc {} +
+#ls -hs1 *.txt
+#paste $(ls -1 *.txt | xargs wc -l | awk '{print $1}') $(ls -hs1 *.txt) | column -s $'\t' -tn
+echo -e "Lines \n________" > tmp1
+ls -1 *.txt.raw | xargs wc -l | awk '{print $1 }' >> tmp1
+echo -e "Size\n_________________________________________________" > tmp2
+ls -hs1 *.txt.raw >> tmp2
+paste tmp1 tmp2 | column -s $'\t' -t > stats
+rm -f tmp1
+rm -f tmp2
+
 cat *.txt.raw | tr '[:upper:]' '[:lower:]' > COMBINED-RAW-HOSTS.TXT
 rm -f *.txt.raw
 
