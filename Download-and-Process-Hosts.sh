@@ -79,6 +79,7 @@ ls -hs1 *.txt.raw >> tmp2
 paste tmp1 tmp2 | column -s $'\t' -t > stats
 rm -f tmp1
 rm -f tmp2
+rm -f ../stats
 mv stats ..
 
 cat *.txt.raw | tr '[:upper:]' '[:lower:]' > COMBINED-RAW-HOSTS.TXT
