@@ -21,9 +21,9 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
   <h2>
     
-    Number of Domains: 3339728
+    Number of Domains: 2797114
     
-    Hosts Size: 65MB
+    Hosts Size: 56MB
     
     Auto Updates: Every 24hrs
     
@@ -38,22 +38,22 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Download Part 0](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part0.txt) | 25MB |
 | pDNSf-hosts-part1.txt | [Download Part 1](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part1.txt) | 25MB |
-| pDNSf-hosts-part2.txt | [Download Part 2](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part2.txt) | 15MB |
+| pDNSf-hosts-part2.txt | [Download Part 2](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part2.txt) | 5.9MB |
 
 <br> </br>
 ## Download Compressed Raw hosts
 
 | Hosts | Raw (gz) link | Size |
 |:---------:|:-------:|:-------:|
-| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts.txt.gz) | 20MB |
+| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts.txt.gz) | 17MB |
 
 <br> </br>
 ## Download Extra hosts
 
 | Hosts | Raw link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/CIDR-IPs.txt) | 45KB | 2827 |
+| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/CIDR-IPs.txt) | 0B | 0 |
 | Wildcard domains | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/Wildcards.txt) | 421B | 19 |
-| just-IPs (Included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/just-IPs.txt) | 5.3MB | 387245 |
+| just-IPs (Included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/just-IPs.txt) | 15KB | 1035 |
 
 </div>
