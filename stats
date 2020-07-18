@@ -3,7 +3,7 @@ ________  _________________________________________________
 491       8.0K Anti-WebMiner_blacklist.txt.raw
 34145     460K AntiSocial_Blacklist_Community_V1.txt.raw
 737        24K Frellwits-Swedish-Hosts-File.txt.raw
-11131     296K KADhosts.txt.raw
+11141     300K KADhosts.txt.raw
 12148     348K MobileAdTrackers.txt.raw
 29        4.0K NSABlocklist_Audio-Fingerprinting-pages.txt.raw
 8217      200K NSABlocklist_HOSTS.txt.raw
@@ -26,11 +26,11 @@ ________  _________________________________________________
 973776     20M dga-feed.txt.raw
 25        4.0K dnswarden_block-3rd-party-cnames.txt.raw
 895433     16M eladkarako_raw-hosts.txt.raw
-10        4.0K energized_ips-list.txt.raw
-10        4.0K energized_regional-domains.txt.raw
-10        4.0K energized_social-domains.txt.raw
-10        4.0K energized_ultimate-domains.txt.raw
-10        4.0K energized_xtreme-domains.txt.raw
+391383    5.4M energized_ips-list.txt.raw
+29714     444K energized_regional-domains.txt.raw
+6832      164K energized_social-domains.txt.raw
+733263     16M energized_ultimate-domains.txt.raw
+8684      176K energized_xtreme-domains.txt.raw
 64996     1.2M firebog_JoeWein.txt.raw
 47831     940K firebog_JoeyLane.txt.raw
 807        16K firebog_w3kbl.txt.raw
@@ -45,12 +45,12 @@ ________  _________________________________________________
 13385     348K notrack-blocklist.txt.raw
 199949    3.7M notracking_dnscrypt-proxy.blacklist.txt.raw
 150089    4.2M notracking_hostnames.txt.raw
-1127965    24M oisd_dbl.txt.raw
-124762    2.9M oisd_dbl_light.txt.raw
-13062     276K phishing_army_blocklist.txt.raw
-16214     324K phishing_army_blocklist_extended.txt.raw
+1125937    24M oisd_dbl.txt.raw
+124754    2.9M oisd_dbl_light.txt.raw
+13245     276K phishing_army_blocklist.txt.raw
+16447     332K phishing_army_blocklist_extended.txt.raw
 3235       80K polish-ads-filter_hostfile.txt.raw
 9936      172K shallalist_adv.txt.raw
 1246       24K shallalist_tracker.txt.raw
 8417      244K xorcan_xhosts.txt.raw
-4271283
+5439499
