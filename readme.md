@@ -21,9 +21,9 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
   <h2>
     
-    Number of Domains: 3447229
+    Number of Domains: 3487848
     
-    Hosts Size: 67MB
+    Hosts Size: 68MB
     
     Auto Updates: Every 24hrs
     
@@ -38,14 +38,14 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Download Part 0](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part0.txt) | 25MB |
 | pDNSf-hosts-part1.txt | [Download Part 1](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part1.txt) | 25MB |
-| pDNSf-hosts-part2.txt | [Download Part 2](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part2.txt) | 17MB |
+| pDNSf-hosts-part2.txt | [Download Part 2](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part2.txt) | 18MB |
 
 <br> </br>
 ## Download Compressed Raw hosts
 
 | Hosts | Raw (gz) link | Size |
 |:---------:|:-------:|:-------:|
-| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts.txt.gz) | 20MB |
+| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts.txt.gz) | 21MB |
 
 <br> </br>
 ## Download Extra hosts
