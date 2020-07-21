@@ -5,8 +5,6 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
 !!!YOU HAVE BEEN WARNED!!! :)
 
-[![HitCount](http://hits.dwyl.com/j-moriarti/pDNSf-Hosts-collection.svg)](http://hits.dwyl.com/j-moriarti/pDNSf-Hosts-collection)
-
 </h2>
 
 ### This hosts file is specially optimized for ["PersonalDNSFilter"](https://www.zenz-solutions.de/personaldnsfilter/) app.
@@ -60,3 +58,8 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 | just-IPs (Included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/just-IPs.txt) | 5.4MB | 389376 |
 
 </div>
+
+[![HitCount](http://hits.dwyl.com/j-moriarti/pDNSf-Hosts-collection.svg)](http://hits.dwyl.com/j-moriarti/pDNSf-Hosts-collection)
+
+
+
