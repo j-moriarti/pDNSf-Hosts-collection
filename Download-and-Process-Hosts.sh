@@ -152,13 +152,13 @@ mv Processing-Phase/CIDR-IPs.txt CIDR-IPs.txt
 mv Processing-Phase/just-IPs.txt just-IPs.txt
 
 hostssize=$(ls -lah pDNSf-hosts.txt | awk '{print $5}')
-hostsnum=$(wc -l < pDNSf-hosts.txt)
+hostsnum=$(LC_NUMERIC=en_US printf "%'.f\n" $(wc -l < pDNSf-hosts.txt))
 wildcardsize=$(ls -lah Wildcards.txt | awk '{print $5}')
-wildcardnum=$(wc -l < Wildcards.txt)
+wildcardnum=$(LC_NUMERIC=en_US printf "%'.f\n" $(wc -l < Wildcards.txt))
 cidrsize=$(ls -lah CIDR-IPs.txt | awk '{print $5}')
-cidrnum=$(wc -l < CIDR-IPs.txt)
+cidrnum=$(LC_NUMERIC=en_US printf "%'.f\n" $(wc -l < CIDR-IPs.txt))
 ipsize=$(ls -lah just-IPs.txt | awk '{print $5}')
-ipnum=$(wc -l < just-IPs.txt)
+ipnum=$(LC_NUMERIC=en_US printf "%'.f\n" $(wc -l < just-IPs.txt))
 
 split -a 1 -C 25M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
