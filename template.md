@@ -27,6 +27,8 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
     
     Auto Updates: Every 24hrs
     
+    [![HitCount](http://hits.dwyl.com/j-moriarti/pDNSf-Hosts-collection.svg)](http://hits.dwyl.com/j-moriarti/pDNSf-Hosts-collection)
+    
   </h2>
 
 
