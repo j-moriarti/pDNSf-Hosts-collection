@@ -59,6 +59,7 @@ ________  _________________________________________________
 319         12K jerryn70_GoodbyeAds-Xiaomi-Extension.txt.raw
 97647      3.9M jerryn70_GoodbyeAds-YouTube-AdBlock.txt.raw
 167663     4.4M jerryn70_GoodbyeAds.txt.raw
+1019244     21M mkb2091_domains.txt.raw
 52         4.0K nextdns_cname-cloaking-blocklist.txt.raw
 13385      348K notrack-blocklist.txt.raw
 202550     3.7M notracking_dnscrypt-proxy.blacklist.txt.raw
@@ -72,4 +73,4 @@ ________  _________________________________________________
 9936       172K shallalist_adv.txt.raw
 1246        24K shallalist_tracker.txt.raw
 8417       244K xorcan_xhosts.txt.raw
-5797743
+6816987
