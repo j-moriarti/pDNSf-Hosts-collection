@@ -152,13 +152,13 @@ mv Processing-Phase/CIDR-IPs.txt CIDR-IPs.txt
 mv Processing-Phase/just-IPs.txt just-IPs.txt
 
 hostssize=$(ls -lah pDNSf-hosts.txt | awk '{print $5}')
-hostsnum=$(LC_NUMERIC=en_US printf "%'.f\n" $(wc -l < pDNSf-hosts.txt))
+hostsnum=$(wc -l < pDNSf-hosts.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 wildcardsize=$(ls -lah Wildcards.txt | awk '{print $5}')
-wildcardnum=$(LC_NUMERIC=en_US printf "%'.f\n" $(wc -l < Wildcards.txt))
+wildcardnum=$(wc -l < Wildcards.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 cidrsize=$(ls -lah CIDR-IPs.txt | awk '{print $5}')
-cidrnum=$(LC_NUMERIC=en_US printf "%'.f\n" $(wc -l < CIDR-IPs.txt))
+cidrnum=$(wc -l < CIDR-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 ipsize=$(ls -lah just-IPs.txt | awk '{print $5}')
-ipnum=$(LC_NUMERIC=en_US printf "%'.f\n" $(wc -l < just-IPs.txt))
+ipnum=$(wc -l < just-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 
 split -a 1 -C 25M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
