@@ -22,7 +22,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
   <h2>
     
-    Number of Domains: 3761276
+    Number of Domains: 3738118
     
     Hosts Size: 73MB
     
@@ -58,8 +58,3 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 | just-IPs (Included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/just-IPs.txt) | 5.4MB | 389376 |
 
 </div>
-
-[![HitCount](http://hits.dwyl.com/j-moriarti/pDNSf-Hosts-collection.svg)](http://hits.dwyl.com/j-moriarti/pDNSf-Hosts-collection)
-
-
-
