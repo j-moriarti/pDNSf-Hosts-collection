@@ -134,8 +134,17 @@ rm -f 2-temp.txt
 
 
 rm -f 6-final-output.txt
-sort -u -o 6-final-output.txt 2-no-www.txt
+rm -f 4-reversed.txt
+rm -f 3-temp.txt
+rm -f 5-sorted.txt
+sort -u -o 3-temp.txt 2-no-www.txt
 rm -f 2-no-www.txt
+perl -nlE 'say reverse split "([.])"' 3-temp.txt > 4-reversed.txt
+rm -f 3-temp.txt
+sort -u -o 5-sorted.txt 4-reversed.txt
+rm -f 4-reversed.txt
+perl -nlE 'say reverse split "([.])"' 5-sorted.txt > 6-final-output.txt
+rm -f 5-sorted.txt
 sed '/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' 6-final-output.txt > just-IPs.txt
 
 
