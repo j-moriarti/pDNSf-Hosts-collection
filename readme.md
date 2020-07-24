@@ -22,9 +22,9 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
   <h2>
     
-    Number of Domains: 3,742,137
+    Number of Domains: 3,763,213
     
-    Hosts Size: 73MB
+    Hosts Size: 74MB
     
     Auto Updates: Every 24hrs
     
@@ -39,7 +39,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Download Part 0](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part0.txt) | 25MB |
 | pDNSf-hosts-part1.txt | [Download Part 1](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part1.txt) | 25MB |
-| pDNSf-hosts-part2.txt | [Download Part 2](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part2.txt) | 23MB |
+| pDNSf-hosts-part2.txt | [Download Part 2](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts-part2.txt) | 24MB |
 
 <br> </br>
 ## Download Compressed Raw hosts
