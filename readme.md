@@ -46,7 +46,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
 | Hosts | Raw (gz) link | Size |
 |:---------:|:-------:|:-------:|
-| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts.txt.gz) | 22MB |
+| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/raw/master/pDNSf-hosts.txt.gz) | 21MB |
 
 <br> </br>
 ## Download Extra hosts
