@@ -1,5 +1,7 @@
 3dns*.adobe.com
 admob.*
+ads*.msads.net
+ads*.msn.com
 ads-*.spotify.com
 adservice.google.*
 doubleclick.*
@@ -14,6 +16,7 @@ saturn*.appads.com
 settings-crashlytics-*.*.elb.amazonaws.com
 settings-crashlytics-*.us-east-1.elb.amazonaws.com
 unityads.*
+vortex*.data.microsoft.com
 wwis-dubc1-vip*
 wwis-dubc1-vip*.adobe.com
 wwis-dubc1-vip*.adobe.de
