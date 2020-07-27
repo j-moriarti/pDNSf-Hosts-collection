@@ -63,6 +63,7 @@ ________  _________________________________________________
 175970     4.6M jerryn70_GoodbyeAds.txt.raw
 26855      584K malwaredomains_justdomains.txt.raw
 1012076     22M mkb2091_domains.txt.raw
+51986      728K mkb2091_ip-blocklist.txt.raw
 52         4.0K nextdns_cname-cloaking-blocklist.txt.raw
 13386      352K notrack-blocklist.txt.raw
 204371     3.8M notracking_dnscrypt-proxy.blacklist.txt.raw
@@ -71,9 +72,9 @@ ________  _________________________________________________
 143810     3.1M oisd_dbl_light.txt.raw
 282        8.0K osint_latestdomains.txt.raw
 12548      264K phishing_army_blocklist.txt.raw
-15522      312K phishing_army_blocklist_extended.txt.raw
+15636      312K phishing_army_blocklist_extended.txt.raw
 3236        80K polish-ads-filter_hostfile.txt.raw
 9936       172K shallalist_adv.txt.raw
 1246        24K shallalist_tracker.txt.raw
 8417       244K xorcan_xhosts.txt.raw
-7722014
+7774114
