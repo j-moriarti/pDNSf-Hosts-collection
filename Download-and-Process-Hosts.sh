@@ -80,6 +80,7 @@ curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --ret
 curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o DandelionSprout_AntiMalwareHosts.txt.raw            https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt
 curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o osint_latestdomains.txt.raw                         https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt
 curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o mkb2091_domains.txt.raw                             https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/domains.txt
+curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o mkb2091_ip-blocklist.txt.raw                        https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/ip_blocklist.txt
 curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o malwaredomains_justdomains.txt.raw                  https://mirror.cedia.org.ec/malwaredomains/justdomains
 
 curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o dga-feed.gz                                         https://osint.bambenekconsulting.com/feeds/dga-feed.gz
@@ -137,17 +138,14 @@ rm -f 2-temp.txt
 
 
 rm -f 6-final-output.txt
-rm -f 4-reversed.txt
-rm -f 3-temp.txt
-rm -f 5-sorted.txt
-sort -u -o 3-temp.txt 2-no-www.txt
+rm -f 3-reversed.txt
+rm -f 4-sorted.txt
+perl -nlE 'say reverse split "([.])"' 2-no-www.txt > 3-reversed.txt
 rm -f 2-no-www.txt
-perl -nlE 'say reverse split "([.])"' 3-temp.txt > 4-reversed.txt
-rm -f 3-temp.txt
-sort -u -o 5-sorted.txt 4-reversed.txt
-rm -f 4-reversed.txt
-perl -nlE 'say reverse split "([.])"' 5-sorted.txt > 6-final-output.txt
-rm -f 5-sorted.txt
+sort -i -s -u -o 4-sorted.txt 3-reversed.txt
+rm -f 3-reversed.txt
+perl -nlE 'say reverse split "([.])"' 4-sorted.txt > 6-final-output.txt
+rm -f 4-sorted.txt
 sed '/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' 6-final-output.txt > just-IPs.txt
 
 
