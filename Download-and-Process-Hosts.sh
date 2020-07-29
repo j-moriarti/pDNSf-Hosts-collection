@@ -170,7 +170,7 @@ cidrnum=$(wc -l < CIDR-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{
 ipsize=$(ls -lah just-IPs.txt | awk '{print $5}')
 ipnum=$(wc -l < just-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 
-split -a 1 -C 25M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
+split -a 1 -C 30M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
 part0size=0
 if [ -f pDNSf-hosts-part0.txt ]; then
