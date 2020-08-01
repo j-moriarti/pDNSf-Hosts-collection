@@ -22,7 +22,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
   <h2>
     
-    Number of Domains: 3,769,066
+    Number of Domains: 3,768,456
     
     Hosts Size: 74MB
     

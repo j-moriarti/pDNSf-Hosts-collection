@@ -68,8 +68,8 @@ ________  _________________________________________________
 13393      352K notrack-blocklist.txt.raw
 206872     3.8M notracking_dnscrypt-proxy.blacklist.txt.raw
 154757     4.4M notracking_hostnames.txt.raw
-1260072     27M oisd_dbl.txt.raw
-144063     3.1M oisd_dbl_light.txt.raw
+1259043     27M oisd_dbl.txt.raw
+143242     3.1M oisd_dbl_light.txt.raw
 2241        40K osint_latestdomains.txt.raw
 13061      272K phishing_army_blocklist.txt.raw
 16193      324K phishing_army_blocklist_extended.txt.raw
@@ -77,4 +77,4 @@ ________  _________________________________________________
 9936       172K shallalist_adv.txt.raw
 1246        24K shallalist_tracker.txt.raw
 8420       244K xorcan_xhosts.txt.raw
-7831576
+7829726
