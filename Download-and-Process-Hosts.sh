@@ -106,11 +106,11 @@ rm -f tmp2
 rm -f ../stats
 mv stats ..
 
-rm -f sources-backup.tar.gz
-tar -czf sources-backup.tar.gz *.txt.raw
-tmp1=$(curl -s --upload-file ./sources-backup.tar.gz https://transfer.sh/sources-backup.tar.gz)
-echo $tmp1 > ../raw-sources-backup
-rm -f sources-backup.tar.gz
+#rm -f sources-backup.tar.gz
+#tar -czf sources-backup.tar.gz *.txt.raw
+#tmp1=$(curl -s --upload-file ./sources-backup.tar.gz https://transfer.sh/sources-backup.tar.gz)
+#echo $tmp1 > ../raw-sources-backup
+#rm -f sources-backup.tar.gz
 
 cat *.txt.raw | tr '[:upper:]' '[:lower:]' > COMBINED-RAW-HOSTS.TXT
 rm -f *.txt.raw
