@@ -22,9 +22,9 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
   <h2>
     
-    Number of Domains: 3,790,405
+    Number of Domains: 3,816,527
     
-    Hosts Size: 74MB
+    Hosts Size: 75MB
     
     Auto Updates: Every 24hrs
     
@@ -39,7 +39,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Download Part 0](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/pDNSf-hosts-part0.txt) | 30MB |
 | pDNSf-hosts-part1.txt | [Download Part 1](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/pDNSf-hosts-part1.txt) | 30MB |
-| pDNSf-hosts-part2.txt | [Download Part 2](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/pDNSf-hosts-part2.txt) | 14MB |
+| pDNSf-hosts-part2.txt | [Download Part 2](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/pDNSf-hosts-part2.txt) | 15MB |
 
 <br> </br>
 ## Download Compressed Raw hosts
@@ -53,8 +53,8 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
 | Hosts | Raw link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/CIDR-IPs.txt) | 43KB | 2,721 |
+| CIDR-IPs | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/CIDR-IPs.txt) | 46KB | 2,883 |
 | Wildcard domains | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/Wildcards.txt) | 476B | 22 |
-| just-IPs (Included in main pDNSf-hosts) | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/just-IPs.txt) | 5.9MB | 430,767 |
+| just-IPs (Included in main pDNSf-hosts) | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/just-IPs.txt) | 5.9MB | 432,017 |
 
 </div>
