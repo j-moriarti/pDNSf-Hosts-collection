@@ -22,7 +22,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
   <h2>
     
-    Number of Domains: 3,830,405
+    Number of Domains: 3,826,953
     
     Hosts Size: 75MB
     
@@ -53,8 +53,8 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
 | Hosts | Raw link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/CIDR-IPs.txt) | 46KB | 2,881 |
+| CIDR-IPs | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/CIDR-IPs.txt) | 46KB | 2,883 |
 | Wildcard domains | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/Wildcards.txt) | 476B | 22 |
-| just-IPs (Included in main pDNSf-hosts) | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/just-IPs.txt) | 5.9MB | 427,517 |
+| just-IPs (Included in main pDNSf-hosts) | [Download](https://raw.githubusercontent.com/j-moriarti/pDNSf-Hosts-collection/master/just-IPs.txt) | 5.9MB | 427,142 |
 
 </div>
