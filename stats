@@ -34,7 +34,7 @@ ________  _________________________________________________
 234         12K WindowsSpyBlocker_extra.txt.raw
 373         16K WindowsSpyBlocker_spy.txt.raw
 11938      224K Yhonay-AntiPopAds.txt.raw
-21990      572K abpvn.txt.raw
+21993      572K abpvn.txt.raw
 422        8.0K additional-hosts_activation.txt.raw
 1004        20K additional-hosts_adservers-and-trackers.txt.raw
 377        8.0K additional-hosts_unwanted-iranian.txt.raw
@@ -46,10 +46,10 @@ ________  _________________________________________________
 974458      20M dga-feed.txt.raw
 25         4.0K dnswarden_block-3rd-party-cnames.txt.raw
 1720656     34M eladkarako_raw-hosts.txt.raw
-384914     5.3M energized_ips-list.txt.raw
-30149      452K energized_regional-domains.txt.raw
+384948     5.3M energized_ips-list.txt.raw
+30161      452K energized_regional-domains.txt.raw
 6881       168K energized_social-domains.txt.raw
-808226      17M energized_ultimate-domains.txt.raw
+808474      17M energized_ultimate-domains.txt.raw
 8682       176K energized_xtreme-domains.txt.raw
 67974      1.2M firebog_JoeWein.txt.raw
 47791      940K firebog_JoeyLane.txt.raw
@@ -77,4 +77,4 @@ ________  _________________________________________________
 9882       172K shallalist_adv.txt.raw
 1256        24K shallalist_tracker.txt.raw
 8420       244K xorcan_xhosts.txt.raw
-7718570
+7718867
