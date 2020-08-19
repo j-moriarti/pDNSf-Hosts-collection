@@ -32,6 +32,16 @@ jobs:
     # Runs a single command using the runners shell
     - name: Proccessing Hosts...
       run: bash ./Download-and-Process-Hosts.sh
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: ./*.txt*
+        tag: v1.0.0
+        overwrite: true
+        file_glob: true
+    - name: Cleanup
+      run: rm -f ./*.txt*
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
