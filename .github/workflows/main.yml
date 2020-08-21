@@ -40,6 +40,7 @@ jobs:
         tag: v1.0.0
         overwrite: true
         file_glob: true
+        body: "These files get automatically updated every 24hrs."
     - name: Cleanup
       run: rm -f ./*.txt*
 
