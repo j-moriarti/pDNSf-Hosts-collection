@@ -7,7 +7,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
 </h2>
 
-### This hosts file is specially optimized for ["PersonalDNSFilter"](https://www.zenz-solutions.de/personaldnsfilter/) app.
+### This hosts file is specially optimized for ["PersonalDNSFilter"](https://www.zenz-solutions.de/personaldnsfilter/) app, which can handle any number of Domains without affecting on ram usage! So there would be no problems adding these hosts to it!
 
 ### (GitHub source can be found ["Here"](https://github.com/IngoZenz/personaldnsfilter))
 
@@ -22,9 +22,9 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
   <h2>
     
-    Number of Domains: 3,846,018
+    Number of Domains: 3,840,172
     
-    Hosts Size: 75MB
+    Hosts File Size: 75MB
     
     Auto Updates: Every 24hrs
     
@@ -33,28 +33,28 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
 
 <br> </br>
-## Download multi-part Raw hosts
+## Download Hosts in multi-part (raw Domains Format)
 
-| Hosts | Raw link | Size |
+| Name | Domains Download link | Size |
 |:---------:|:-------:|:-------:|
-| pDNSf-hosts-part0.txt | [Download Part 0](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | 30MB |
-| pDNSf-hosts-part1.txt | [Download Part 1](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | 30MB |
-| pDNSf-hosts-part2.txt | [Download Part 2](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 15MB |
+| pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | 30MB |
+| pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | 30MB |
+| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 15MB |
 
 <br> </br>
-## Download Compressed Raw hosts
+## Download Compressed Hosts (raw Domains Format)
 
-| Hosts | Raw (gz) link | Size |
+| Name | Domains (GZ Format) Download link | Size |
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | 21MB |
 
 <br> </br>
-## Download Extra hosts
+## Download Extra Hosts (raw Domains Format)
 
-| Hosts | Raw link | Size | # of Lines |
+| Name | Download link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 48KB | 2,978 |
+| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 44KB | 2,787 |
 | Wildcard domains | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | 476B | 22 |
-| just-IPs (Included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 6.0MB | 437,692 |
+| just-IPs (Already included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 5.8MB | 420,646 |
 
 </div>
