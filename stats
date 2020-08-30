@@ -40,7 +40,6 @@ ________  _________________________________________________
 377        8.0K additional-hosts_unwanted-iranian.txt.raw
 5950       148K anudeepND_CoinMiner.txt.raw
 1764        28K bad_packets_list.txt.raw
-109329     2.1M badmojr_1Hosts_Pro_wildcards.txt.raw
 200913     6.3M developerdan_ads-and-tracking-extended.txt.raw
 6791       312K developerdan_amp-hosts-extended.txt.raw
 10923      376K developerdan_tracking-aggressive-extended.txt.raw
@@ -78,4 +77,4 @@ ________  _________________________________________________
 9882       172K shallalist_adv.txt.raw
 1256        24K shallalist_tracker.txt.raw
 8420       244K xorcan_xhosts.txt.raw
-7901966
+7792637
