@@ -83,10 +83,10 @@ curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --ret
 curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o mkb2091_ip-blocklist.txt.raw                        https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/ip_blocklist.txt
 curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o malwaredomains_justdomains.txt.raw                  https://mirror.cedia.org.ec/malwaredomains/justdomains
 
-curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o dga-feed.gz                                         https://osint.bambenekconsulting.com/feeds/dga-feed.gz
-gzip -N -d dga-feed.gz
-sed 's/,Domain .*$//' dga-feed-all.csv > dga-feed.txt.raw
-rm -f dga-feed-all.csv
+#curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o dga-feed.gz                                         https://osint.bambenekconsulting.com/feeds/dga-feed.gz
+#gzip -N -d dga-feed.gz
+#sed 's/,Domain .*$//' dga-feed-all.csv > dga-feed.txt.raw
+#rm -f dga-feed-all.csv
 
 echo "" | tee -a *.txt.raw
 
