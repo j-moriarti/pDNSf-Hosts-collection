@@ -169,12 +169,18 @@ mv Processing-Phase/just-IPs.txt just-IPs.txt
 
 hostssize=$(ls -lah pDNSf-hosts.txt | awk '{print $5}')
 hostsnum=$(wc -l < pDNSf-hosts.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
+
 wildcardsize=$(ls -lah Wildcards.txt | awk '{print $5}')
 wildcardnum=$(wc -l < Wildcards.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
+echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - Wildcards.txt > temp && mv temp Wildcards.txt
+
 cidrsize=$(ls -lah CIDR-IPs.txt | awk '{print $5}')
 cidrnum=$(wc -l < CIDR-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
+echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - CIDR-IPs.txt > temp && mv temp CIDR-IPs.txt
+
 ipsize=$(ls -lah just-IPs.txt | awk '{print $5}')
 ipnum=$(wc -l < just-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
+echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - just-IPs.txt > temp && mv temp just-IPs.txt
 
 split -a 1 -C 30M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
@@ -182,23 +188,27 @@ part0size=0
 if [ -f pDNSf-hosts-part0.txt ]; then
     part0size=$(ls -lah pDNSf-hosts-part0.txt | awk '{print $5}')
 else
-    touch pDNSf-hosts-part0.txt
+    echo "#This list is temporarily empty at the moment." > pDNSf-hosts-part0.txt
 fi
+echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part0.txt > temp && mv temp pDNSf-hosts-part0.txt
 
 part1size=0
 if [ -f pDNSf-hosts-part1.txt ]; then
     part1size=$(ls -lah pDNSf-hosts-part1.txt | awk '{print $5}')
 else
-    touch pDNSf-hosts-part1.txt
+    echo "#This list is temporarily empty at the moment." > pDNSf-hosts-part1.txt
 fi
+echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part1.txt > temp && mv temp pDNSf-hosts-part1.txt
 
 part2size=0
 if [ -f pDNSf-hosts-part2.txt ]; then
     part2size=$(ls -lah pDNSf-hosts-part2.txt | awk '{print $5}')     
 else
-    touch pDNSf-hosts-part2.txt
+    echo "#This list is temporarily empty at the moment." > pDNSf-hosts-part2.txt
 fi
+echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part2.txt > temp && mv temp pDNSf-hosts-part2.txt
 
+echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts.txt > temp && mv temp pDNSf-hosts.txt
 gzip -f -9 pDNSf-hosts.txt
 
 gzsize=$(ls -lah pDNSf-hosts.txt.gz | awk '{print $5}')
