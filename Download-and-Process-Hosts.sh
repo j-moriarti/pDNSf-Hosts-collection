@@ -87,6 +87,10 @@ curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --ret
 curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o binarydefense_banlist.txt.raw                       https://www.binarydefense.com/banlist.txt
 curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o badips_list_any-age-3days.txt.raw                   https://www.badips.com/get/list/any/3?age=3d
 
+curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o netlab-360_dga.txt.raw                      http://data.netlab.360.com/feeds/dga/dga.txt
+cat netlab-360_dga.txt.raw | sed '/^#/d' | awk '{print $2 }' > netlab-360_dga_domains.txt.raw
+rm -f netlab-360_dga.txt.raw
+
 #curl -L -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o dga-feed.gz                                         https://osint.bambenekconsulting.com/feeds/dga-feed.gz
 #gzip -N -d dga-feed.gz
 #sed 's/,Domain .*$//' dga-feed-all.csv > dga-feed.txt.raw
