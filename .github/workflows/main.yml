@@ -36,13 +36,13 @@ jobs:
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: ./*.txt*
+        file: output/*
         tag: v1.0.0
         overwrite: true
         file_glob: true
         body: "These files get automatically updated every 24hrs."
     - name: Cleanup
-      run: rm -f ./*.txt*
+      run: rm -f -r output/
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
