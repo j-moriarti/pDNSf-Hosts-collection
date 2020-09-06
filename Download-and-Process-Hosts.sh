@@ -1,7 +1,10 @@
 #!bin/bash
 
+rm -f -r output/
 mkdir -p RAW-Filters
 mkdir -p Processing-Phase
+mkdir -p output
+
 cd RAW-Filters/
 rm -f COMBINED-RAW-HOSTS.TXT
 rm -f *.txt.raw
@@ -114,6 +117,12 @@ rm -f tmp2
 rm -f ../stats
 mv stats ..
 
+currdate="$(date -u +%Y-%m-%d)"
+currtime="$(date -u +%H:%M:%S)"
+currdatetime="$(date -u +%Y-%m-%d_%H-%M)"
+
+tar -czf ../output/sources-backup-$currdatetime.tar.gz *.txt.raw
+
 #rm -f sources-backup.tar.gz
 #tar -czf sources-backup.tar.gz *.txt.raw
 #tmp1=$(curl -s --upload-file ./sources-backup.tar.gz https://transfer.sh/sources-backup.tar.gz)
@@ -180,15 +189,15 @@ hostsnum=$(wc -l < pDNSf-hosts.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit
 
 wildcardsize=$(ls -lah Wildcards.txt | awk '{print $5}')
 wildcardnum=$(wc -l < Wildcards.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
-echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - Wildcards.txt > temp && mv temp Wildcards.txt
+echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - Wildcards.txt > temp && mv temp Wildcards.txt
 
 cidrsize=$(ls -lah CIDR-IPs.txt | awk '{print $5}')
 cidrnum=$(wc -l < CIDR-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
-echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - CIDR-IPs.txt > temp && mv temp CIDR-IPs.txt
+echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - CIDR-IPs.txt > temp && mv temp CIDR-IPs.txt
 
 ipsize=$(ls -lah just-IPs.txt | awk '{print $5}')
 ipnum=$(wc -l < just-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
-echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - just-IPs.txt > temp && mv temp just-IPs.txt
+echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - just-IPs.txt > temp && mv temp just-IPs.txt
 
 split -a 1 -C 30M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
@@ -198,7 +207,7 @@ if [ -f pDNSf-hosts-part0.txt ]; then
 else
     echo "#This list is temporarily empty at the moment." > pDNSf-hosts-part0.txt
 fi
-echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part0.txt > temp && mv temp pDNSf-hosts-part0.txt
+echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part0.txt > temp && mv temp pDNSf-hosts-part0.txt
 
 part1size=0
 if [ -f pDNSf-hosts-part1.txt ]; then
@@ -206,7 +215,7 @@ if [ -f pDNSf-hosts-part1.txt ]; then
 else
     echo "#This list is temporarily empty at the moment." > pDNSf-hosts-part1.txt
 fi
-echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part1.txt > temp && mv temp pDNSf-hosts-part1.txt
+echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part1.txt > temp && mv temp pDNSf-hosts-part1.txt
 
 part2size=0
 if [ -f pDNSf-hosts-part2.txt ]; then
@@ -214,14 +223,23 @@ if [ -f pDNSf-hosts-part2.txt ]; then
 else
     echo "#This list is temporarily empty at the moment." > pDNSf-hosts-part2.txt
 fi
-echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part2.txt > temp && mv temp pDNSf-hosts-part2.txt
+echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part2.txt > temp && mv temp pDNSf-hosts-part2.txt
 
-echo "# Updated on $(date -u +%Y-%m-%d) $(date -u +%H:%M:%S) UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts.txt > temp && mv temp pDNSf-hosts.txt
+echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts.txt > temp && mv temp pDNSf-hosts.txt
 gzip -f -9 pDNSf-hosts.txt
 
 gzsize=$(ls -lah pDNSf-hosts.txt.gz | awk '{print $5}')
 
 rm -f readme.md
 sed -e "s/_hostssize_/$hostssize/g" -e "s/_hostsnum_/$hostsnum/g" -e "s/_wildcardsize_/$wildcardsize/g" -e "s/_wildcardnum_/$wildcardnum/g" -e "s/_cidrsize_/$cidrsize/g" -e "s/_cidrnum_/$cidrnum/g" -e "s/_ipsize_/$ipsize/g" -e "s/_ipnum_/$ipnum/g" -e "s/_part0size_/$part0size/g" -e "s/_part1size_/$part1size/g" -e "s/_part2size_/$part2size/g" -e "s/_gzsize_/$gzsize/g" template > readme.md
+
+
+mv pDNSf-hosts.txt.gz output/
+mv Wildcards.txt output/
+mv CIDR-IPs.txt output/
+mv just-IPs.txt output/
+mv pDNSf-hosts-part0.txt output/
+mv pDNSf-hosts-part1.txt output/
+mv pDNSf-hosts-part2.txt output/
 
 echo "Finished."
