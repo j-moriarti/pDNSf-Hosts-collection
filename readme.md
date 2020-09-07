@@ -22,9 +22,9 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
   <h2>
     
-    Number of Domains: 4,191,096
+    Number of Domains: 4,202,582
     
-    Hosts File Size: 82MB
+    Hosts File Size: 83MB
     
     Auto Updates: Every 24hrs
     
@@ -38,7 +38,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | 30MB |
 | pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | 30MB |
-| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 22MB |
+| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 23MB |
 
 <br> </br>
 ## Download Compressed Hosts (raw Domains Format)
@@ -52,8 +52,8 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
 | Name | Download link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 47KB | 2,957 |
+| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 47KB | 2,948 |
 | Wildcard domains | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | 476B | 22 |
-| just-IPs (Already included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 6.1MB | 445,673 |
+| just-IPs (Already included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 6.1MB | 445,472 |
 
 </div>
