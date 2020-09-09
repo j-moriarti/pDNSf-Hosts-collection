@@ -254,4 +254,10 @@ mv pDNSf-hosts-part0.txt output/
 mv pDNSf-hosts-part1.txt output/
 mv pDNSf-hosts-part2.txt output/
 
+cd output/
+
+curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o pDNSf-hosts-old.txt.gz  https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz
+moddate=$(date -r pDNSf-hosts-old.txt.gz "+%Y-%m-%d_%H-%M")
+mv pDNSf-hosts-old.txt.gz pDNSf-hosts-$moddate.gz
+
 echo "Finished."
