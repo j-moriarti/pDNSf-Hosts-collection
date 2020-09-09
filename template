@@ -15,8 +15,11 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 <h4>
 
 !!! THIS HOSTS FILE IS EXTREMELY LARGE !!!
+
 !!! There is a high possibility of FALSE-POSITIVE or UNWANTED BLOCKING !!!
+
 !!! Be prepared for manual whitelisting in pDNSf !!!
+
 !!!YOU HAVE BEEN WARNED AGAIN!!!
 
 </h4>
