@@ -116,6 +116,9 @@ cd ..
 python -m zipfile -c sources-backup-$currdatetime.zip RAW-Filters/
 cd RAW-Filters/
 
+#CRLF to LF
+ls -1 *.txt.raw | xargs sed -i -e 's/\r\+$//'
+
 echo "" | tee -a *.txt.raw
 
 echo $(ls -1q *.txt.raw | wc -l) sources
