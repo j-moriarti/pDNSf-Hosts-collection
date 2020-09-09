@@ -15,16 +15,17 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 <h4>
 
 !!! THIS HOSTS FILE IS EXTREMELY LARGE !!!
-
+!!! There is a high possibility of FALSE-POSITIVE or UNWANTED BLOCKING !!!
+!!! Be prepared for manual whitelisting in pDNSf !!!
 !!!YOU HAVE BEEN WARNED AGAIN!!!
 
 </h4>
 
   <h2>
     
-    Number of Domains: 4,205,992
+    Number of Domains: 4,299,641
     
-    Hosts File Size: 83MB
+    Hosts File Size: 85MB
     
     Auto Updates: Every 24hrs
     
@@ -38,7 +39,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | 30MB |
 | pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | 30MB |
-| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 23MB |
+| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 25MB |
 
 <br> </br>
 ## Download Compressed Hosts (raw Domains Format)
@@ -52,8 +53,8 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
 | Name | Download link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 49KB | 3,051 |
+| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 53KB | 3,316 |
 | Wildcard domains | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | 476B | 22 |
-| just-IPs (Already included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 6.0MB | 433,433 |
+| just-IPs (Already included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 6.3MB | 454,860 |
 
 </div>
