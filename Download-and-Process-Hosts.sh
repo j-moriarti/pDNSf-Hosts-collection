@@ -3,7 +3,8 @@
 rm -f -r output/
 mkdir -p RAW-Filters
 mkdir -p Processing-Phase
-mkdir -p output
+mkdir -p output/main
+mkdir -p output/backup
 
 cd RAW-Filters/
 rm -f COMBINED-RAW-HOSTS.TXT
@@ -248,19 +249,19 @@ rm -f readme.md
 sed -e "s/_hostssize_/$hostssize/g" -e "s/_hostsnum_/$hostsnum/g" -e "s/_wildcardsize_/$wildcardsize/g" -e "s/_wildcardnum_/$wildcardnum/g" -e "s/_cidrsize_/$cidrsize/g" -e "s/_cidrnum_/$cidrnum/g" -e "s/_ipsize_/$ipsize/g" -e "s/_ipnum_/$ipnum/g" -e "s/_part0size_/$part0size/g" -e "s/_part1size_/$part1size/g" -e "s/_part2size_/$part2size/g" -e "s/_gzsize_/$gzsize/g" template > readme.md
 
 
-mv sources-backup-*.zip output/
-mv pDNSf-hosts.txt.gz output/
-mv Wildcards.txt output/
-mv CIDR-IPs.txt output/
-mv just-IPs.txt output/
-mv pDNSf-hosts-part0.txt output/
-mv pDNSf-hosts-part1.txt output/
-mv pDNSf-hosts-part2.txt output/
+mv sources-backup-*.zip output/backup/
+mv pDNSf-hosts.txt.gz output/main/
+mv Wildcards.txt output/main/
+mv CIDR-IPs.txt output/main/
+mv just-IPs.txt output/main/
+mv pDNSf-hosts-part0.txt output/main/
+mv pDNSf-hosts-part1.txt output/main/
+mv pDNSf-hosts-part2.txt output/main/
 
-cd output/
+cd output/backup/
 
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o pDNSf-hosts-old.txt.gz  https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz
 moddate=$(date -r pDNSf-hosts-old.txt.gz "+%Y-%m-%d_%H-%M")
-mv pDNSf-hosts-old.txt.gz pDNSf-hosts-$moddate.gz
+mv pDNSf-hosts-old.txt.gz pDNSf-hosts-backup-$moddate.gz
 
 echo "Finished."
