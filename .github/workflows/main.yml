@@ -32,15 +32,24 @@ jobs:
     # Runs a single command using the runners shell
     - name: Proccessing Hosts...
       run: bash ./Download-and-Process-Hosts.sh
-    - name: Upload binaries to release
+    - name: Upload Backups to release
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: output/*
+        file: output/backup/*
+        tag: v1.0.0-backup
+        overwrite: true
+        file_glob: true
+        body: "These files get automatically updated every 24 hours."
+    - name: Upload Hosts to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: output/main/*
         tag: v1.0.0
         overwrite: true
         file_glob: true
-        body: "These files get automatically updated every 24hrs."
+        body: "These files get automatically updated every 24 hours."
     - name: Cleanup
       run: rm -f -r output/
 
