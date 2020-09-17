@@ -7,7 +7,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
 
 </h2>
 
-### This hosts file is specially optimized for ["PersonalDNSFilter"](https://www.zenz-solutions.de/personaldnsfilter/) app, which can handle any number of Domains without affecting on ram usage! So there would be no problems adding these hosts to it!
+### This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/) app.This ["open-source"](https://github.com/IngoZenz/personaldnsfilter) app can handle any number of Domains without affecting on ram usage! So there would be no problems adding these hosts to it!
 
 ### (GitHub source can be found ["Here"](https://github.com/IngoZenz/personaldnsfilter))
 
