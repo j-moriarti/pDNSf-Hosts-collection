@@ -6,12 +6,10 @@
 #### The compiled hosts in this Repo are meant for personal usage only. I have no responsibility about misusing of these files.
 
 #### !!!YOU HAVE BEEN WARNED!!! :wink:
-
-
-#### This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/) app. This open-source app can handle any number of Domains without affecting on ram usage! So there would be no problems adding these hosts to it!
-##### (GitHub source of PersonalDNSfilter app can be found ["Here"](https://github.com/IngoZenz/personaldnsfilter))
-
-
+ 
+ 
+#### This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/) app. This [Open-Source](https://github.com/IngoZenz/personaldnsfilter) app can handle any number of Domains without affecting on ram usage! So there would be no problems adding these hosts to it!
+ 
 
 ##### !!! THIS HOSTS FILE IS EXTREMELY LARGE !!!
 
@@ -34,23 +32,23 @@
 
 
 <br> </br>
-## Download Hosts in multi-part (raw Domains Format)
+### Download Hosts in multi-part (Domains-only Format)
 
-| Name | Domains Download link | Size |
+| Name | Download link | Size |
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | _part0size_B |
 | pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | _part1size_B |
 | pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | _part2size_B |
 
 <br> </br>
-## Download Compressed Hosts (raw Domains Format)
+### Download GZip Compressed Hosts (Domains-only Format)
 
-| Name | Domains (GZ Format) Download link | Size |
+| Name | Download link | Size |
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | _gzsize_B |
 
 <br> </br>
-## Download Extra Hosts (raw Domains Format)
+### Download Extra Hosts (IPs-only $ Domains-only Format)
 
 | Name | Download link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
