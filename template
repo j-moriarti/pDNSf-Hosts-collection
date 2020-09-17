@@ -2,8 +2,7 @@
 
 
 #### The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found in my code: ["Download-and-Process-Hosts.sh"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/Download-and-Process-Hosts.sh)
-#### Daily backups of the unmodified (original) hosts sources + the previous versions of final output (pDNSf-hosts.txt.gz) can be found at Releases page ["Here"](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/tag/v1.0.0-backup)
-#### The compiled hosts in this Repo are meant for personal usage only. I have no responsibility about misusing of these files.
+#### The compiled hosts in this Repo are meant for my personal usage only. I have no responsibility about others misusing of these files.
 
 #### !!!YOU HAVE BEEN WARNED!!! :wink:
  
