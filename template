@@ -1,30 +1,28 @@
 <div align="center">
 
-<h2>
-The Hosts sources that are used in this Repository, have their own Licenses. The compiled hosts in this Repo are meant for personal usage only. I have no responsibility about misusing of these files.
 
-!!!YOU HAVE BEEN WARNED!!! :)
+#### The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found in my code: ["Download-and-Process-Hosts.sh"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/Download-and-Process-Hosts.sh)
+#### Daily backups of the unmodified (original) hosts sources + the previous versions of final output (pDNSf-hosts.txt.gz) can be found at Releases page ["Here"](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/tag/v1.0.0-backup)
+#### The compiled hosts in this Repo are meant for personal usage only. I have no responsibility about misusing of these files.
 
-</h2>
+#### !!!YOU HAVE BEEN WARNED!!! :wink:
 
-### This hosts file is specially optimized for ["PersonalDNSFilter"](https://www.zenz-solutions.de/personaldnsfilter/) app, which can handle any number of Domains without affecting on ram usage! So there would be no problems adding these hosts to it!
 
-### (GitHub source can be found ["Here"](https://github.com/IngoZenz/personaldnsfilter))
+#### This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/) app. This open-source app can handle any number of Domains without affecting on ram usage! So there would be no problems adding these hosts to it!
+##### (GitHub source of PersonalDNSfilter app can be found ["Here"](https://github.com/IngoZenz/personaldnsfilter))
+
+
+
+##### !!! THIS HOSTS FILE IS EXTREMELY LARGE !!!
+
+##### !!! There is a high possibility of FALSE-POSITIVE or UNWANTED BLOCKING !!!
+
+##### !!! Be prepared for manual whitelisting in pDNSf !!!
+
+##### !!!YOU HAVE BEEN WARNED AGAIN!!!
 
 
 <h4>
-
-!!! THIS HOSTS FILE IS EXTREMELY LARGE !!!
-
-!!! There is a high possibility of FALSE-POSITIVE or UNWANTED BLOCKING !!!
-
-!!! Be prepared for manual whitelisting in pDNSf !!!
-
-!!!YOU HAVE BEEN WARNED AGAIN!!!
-
-</h4>
-
-  <h2>
     
     Number of Domains: _hostsnum_
     
@@ -32,7 +30,7 @@ The Hosts sources that are used in this Repository, have their own Licenses. The
     
     Auto Updates: Every 24hrs
     
-  </h2>
+</h4>
 
 
 <br> </br>
