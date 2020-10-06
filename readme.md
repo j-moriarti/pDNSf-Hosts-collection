@@ -21,7 +21,7 @@
 
 <h4>
     
-    Number of Domains: 4,391,156
+    Number of Domains: 4,394,418
     
     Hosts File Size: 86MB
     
@@ -51,8 +51,8 @@
 
 | Name | Download link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 49KB | 3,067 |
+| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 48KB | 3,024 |
 | Wildcard domains | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | 476B | 22 |
-| just-IPs (Already included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 8.3MB | 604,644 |
+| just-IPs (Already included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 8.2MB | 602,766 |
 
 </div>
