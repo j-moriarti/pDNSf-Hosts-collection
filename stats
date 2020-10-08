@@ -6,9 +6,9 @@ ________  _________________________________________________
 21481     556K abpvn.txt.raw
 34145     460K antisocial_blacklist_community_v1.txt.raw
 5950      148K anudeepnd_coinminer.txt.raw
-501       8.0K badips_list_any-age-3days.txt.raw
-6678       96K binarydefense_banlist.txt.raw
-28776     404K blocklist.de_lists_all.txt.raw
+502       8.0K badips_list_any-age-3days.txt.raw
+6707       96K binarydefense_banlist.txt.raw
+28732     404K blocklist.de_lists_all.txt.raw
 9889      172K cbuijs_shallalist_adv.txt.raw
 1261       24K cbuijs_shallalist_tracker.txt.raw
 67518     2.2M chef-koch_ads-tracker-hosts.txt.raw
@@ -38,7 +38,7 @@ ________  _________________________________________________
 6884      168K energized_social-domains.txt.raw
 930522     20M energized_ultimate-domains.txt.raw
 8681      176K energized_xtreme-domains.txt.raw
-134       4.0K feodotracker_ipblocklist-recommended.txt.raw
+132       4.0K feodotracker_ipblocklist-recommended.txt.raw
 70759     1.3M firebog_joewein.txt.raw
 44184     868K firebog_joeylane.txt.raw
 807        16K firebog_w3kbl.txt.raw
@@ -59,7 +59,7 @@ ________  _________________________________________________
 26856     584K malwaredomains_justdomains.txt.raw
 1103877    24M mkb2091_domains.txt.raw
 200461    2.7M mkb2091_ip-blocklist.txt.raw
-5669      120K netlab-360_dga_domains.txt.raw
+1320716    27M netlab-360_dga_domains.txt.raw
 57        4.0K nextdns_cname-cloaking-blocklist.txt.raw
 244672    4.8M notracking_dnscrypt-proxy.blacklist.txt.raw
 182989    5.8M notracking_hostnames.txt.raw
@@ -91,4 +91,4 @@ ________  _________________________________________________
 45876     672K shadowwhisperer_typo.txt.raw
 1764       28K tg12_bad_packets_list.txt.raw
 11938     224K yhonay-antipopads.txt.raw
-7368488
+8683519
