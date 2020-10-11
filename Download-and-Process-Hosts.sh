@@ -1,5 +1,24 @@
 #!bin/bash
 
+print_size () {
+    filesize=$1
+    arg2=$2
+    if [ $filesize -ge 1048576 ]
+    then
+        filesize="$(awk 'BEGIN {printf "%.1f",'$filesize'/1048576}') MB"
+    elif [ $filesize -ge 1024 ]
+    then
+        filesize="$(awk 'BEGIN {printf "%.1f",'$filesize'/1024}') KB"
+    else
+        filesize="$filesize B "
+    fi
+    if [ $arg2 == 1 ]
+    then
+        echo $filesize
+    else
+        printf "%9s\n" "$filesize"
+    fi
+}
 rm -f -r output/
 mkdir -p RAW-Filters
 mkdir -p Processing-Phase
@@ -133,11 +152,14 @@ echo $(ls -1q *.txt.raw | wc -l) sources
 echo -e "Domains \n________" > tmp1
 ls -1 *.txt.raw | xargs wc -l | awk '{print $1 }' >> tmp1
 
-echo -e "Size \n______" > tmp2
-ls -hl *.txt.raw | awk '{print $5 }' >> tmp2
+echo -e "  Size   \n_________" > tmp2
+du -abc *.txt.raw | awk '{print $1 }' | while read line
+do
+    print_size $line 2 >>tmp2
+done
 
 echo -e "Name \n____________________________________________________" > tmp3
-ls -1 *.txt.raw >> tmp3
+du -abc *.txt.raw | awk '{print $2 }' >> tmp3
 
 paste tmp3 tmp2 | column -s $'\t' -t > tmp4
 paste tmp4 tmp1 | column -s $'\t' -t > stats
