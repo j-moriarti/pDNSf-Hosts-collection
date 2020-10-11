@@ -12,11 +12,11 @@ print_size () {
     else
         filesize="$filesize B "
     fi
-    if [ $arg2 == 1 ]
+    if [ $arg2 == 2 ]
     then
-        echo $filesize
-    else
         printf "%9s\n" "$filesize"
+    else
+        echo $filesize
     fi
 }
 rm -f -r output/
@@ -155,7 +155,7 @@ ls -1 *.txt.raw | xargs wc -l | awk '{print $1 }' >> tmp1
 echo -e "  Size   \n_________" > tmp2
 du -abc *.txt.raw | awk '{print $1 }' | while read line
 do
-    print_size $line 2 >>tmp2
+    print_size $line 2 >> tmp2
 done
 
 echo -e "Name \n____________________________________________________" > tmp3
@@ -231,42 +231,42 @@ mv Processing-Phase/Wildcards.txt Wildcards.txt
 mv Processing-Phase/CIDR-IPs.txt CIDR-IPs.txt
 mv Processing-Phase/just-IPs.txt just-IPs.txt
 
-hostssize=$(ls -lah pDNSf-hosts.txt | awk '{print $5}')
+hostssize=$(du -abc pDNSf-hosts.txt | print_size $(awk '{print $1}'))
 hostsnum=$(wc -l < pDNSf-hosts.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 
-wildcardsize=$(ls -lah Wildcards.txt | awk '{print $5}')
+wildcardsize=$(du -abc Wildcards.txt | print_size $(awk '{print $1}'))
 wildcardnum=$(wc -l < Wildcards.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - Wildcards.txt > temp && mv temp Wildcards.txt
 
-cidrsize=$(ls -lah CIDR-IPs.txt | awk '{print $5}')
+cidrsize=$(du -abc CIDR-IPs.txt | print_size $(awk '{print $1}'))
 cidrnum=$(wc -l < CIDR-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - CIDR-IPs.txt > temp && mv temp CIDR-IPs.txt
 
-ipsize=$(ls -lah just-IPs.txt | awk '{print $5}')
+ipsize=$(du -abc just-IPs.txt | print_size $(awk '{print $1}'))
 ipnum=$(wc -l < just-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - just-IPs.txt > temp && mv temp just-IPs.txt
 
 split -a 1 -C 30M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
-part0size=0
+part0size="0 B"
 if [ -f pDNSf-hosts-part0.txt ]; then
-    part0size=$(ls -lah pDNSf-hosts-part0.txt | awk '{print $5}')
+    part0size=$(du -abc pDNSf-hosts-part0.txt | print_size $(awk '{print $1}'))
 else
     echo "#This list is temporarily empty at the moment." > pDNSf-hosts-part0.txt
 fi
 echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part0.txt > temp && mv temp pDNSf-hosts-part0.txt
 
-part1size=0
+part1size="0 B"
 if [ -f pDNSf-hosts-part1.txt ]; then
-    part1size=$(ls -lah pDNSf-hosts-part1.txt | awk '{print $5}')
+    part1size=$(du -abc pDNSf-hosts-part1.txt | print_size $(awk '{print $1}'))
 else
     echo "#This list is temporarily empty at the moment." > pDNSf-hosts-part1.txt
 fi
 echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts-part1.txt > temp && mv temp pDNSf-hosts-part1.txt
 
-part2size=0
+part2size="0 B"
 if [ -f pDNSf-hosts-part2.txt ]; then
-    part2size=$(ls -lah pDNSf-hosts-part2.txt | awk '{print $5}')     
+    part2size=$(du -abc pDNSf-hosts-part2.txt | print_size $(awk '{print $1}'))     
 else
     echo "#This list is temporarily empty at the moment." > pDNSf-hosts-part2.txt
 fi
@@ -275,7 +275,7 @@ echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j
 echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - pDNSf-hosts.txt > temp && mv temp pDNSf-hosts.txt
 gzip -f -9 pDNSf-hosts.txt
 
-gzsize=$(ls -lah pDNSf-hosts.txt.gz | awk '{print $5}')
+gzsize=$(du -abc pDNSf-hosts.txt.gz | print_size $(awk '{print $1}'))
 
 rm -f readme.md
 sed -e "s/_hostssize_/$hostssize/g" -e "s/_hostsnum_/$hostsnum/g" -e "s/_wildcardsize_/$wildcardsize/g" -e "s/_wildcardnum_/$wildcardnum/g" -e "s/_cidrsize_/$cidrsize/g" -e "s/_cidrnum_/$cidrnum/g" -e "s/_ipsize_/$ipsize/g" -e "s/_ipnum_/$ipnum/g" -e "s/_part0size_/$part0size/g" -e "s/_part1size_/$part1size/g" -e "s/_part2size_/$part2size/g" -e "s/_gzsize_/$gzsize/g" template > readme.md
