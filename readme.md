@@ -21,9 +21,9 @@
 
 <h4>
     
-    Number of Domains: 4,459,250
+    Number of Domains: 4,415,735
     
-    Hosts File Size: 87MB
+    Hosts File Size: 86MB
     
     Auto Updates: Every 24hrs
     
@@ -37,7 +37,7 @@
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | 30MB |
 | pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | 30MB |
-| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 27MB |
+| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 26MB |
 
 <br> </br>
 ### Download GZip Compressed Hosts (Domains-only Format)
@@ -51,8 +51,8 @@
 
 | Name | Download link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 49KB | 3,076 |
+| CIDR-IPs | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 49KB | 3,086 |
 | Wildcard domains | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | 476B | 22 |
-| just-IPs (Already included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 8.4MB | 614,539 |
+| just-IPs (Already included in main pDNSf-hosts) | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 8.4MB | 614,127 |
 
 </div>
