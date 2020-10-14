@@ -81,9 +81,9 @@ curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o developerdan_amp-hosts-extended.txt.raw             https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o abpvn.txt.raw                                       https://abpvn.com/android/abpvn.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o lassekongo83_frellwits-swedish-hosts-file.txt.raw   https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt
-curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o DRSDavidSoft_unwanted-iranian.txt.raw               https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt
-curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o DRSDavidSoft_adservers-and-trackers.txt.raw         https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/adservers-and-trackers.txt
-curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o DRSDavidSoft_activation.txt.raw                     https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/activation.txt
+curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o drsdavidsoft_unwanted-iranian.txt.raw               https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt
+curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o drsdavidsoft_adservers-and-trackers.txt.raw         https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/adservers-and-trackers.txt
+curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o drsdavidsoft_activation.txt.raw                     https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/activation.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o yhonay-antipopads.txt.raw                           https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o greatis_anti-webminer_blacklist.txt.raw             https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/blacklist.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o firebog_joewein.txt.raw                             https://v.firebog.net/hosts/JoeWein.txt
@@ -133,6 +133,9 @@ currdate="$(date -u +%Y-%m-%d)"
 currtime="$(date -u +%H:%M:%S)"
 currdatetime="$(date -u +%Y-%m-%d_%H-%M)"
 
+echo -e "Last Update Time (server-side)\n________________" > tmp5
+ls -1 *.txt.raw | while read line; do date -r $line "+%Y-%m-%d %H:%M"; done >> tmp5
+
 #tar -czf ../output/sources-backup-$currdatetime.tar.gz *.txt.raw
 cd ..
 python -m zipfile -c sources-backup-$currdatetime.zip RAW-Filters/
@@ -162,11 +165,13 @@ echo -e "Name \n____________________________________________________" > tmp3
 du -abc *.txt.raw | awk '{print $2 }' >> tmp3
 
 paste tmp3 tmp2 | column -s $'\t' -t > tmp4
-paste tmp4 tmp1 | column -s $'\t' -t > stats
+paste tmp4 tmp1 | column -s $'\t' -t > tmp3
+paste tmp3 tmp5 | column -s $'\t' -t > stats
 rm -f tmp1
 rm -f tmp2
 rm -f tmp3
 rm -f tmp4
+rm -f tmp5
 rm -f ../stats
 mv stats ..
 
@@ -248,8 +253,6 @@ mv Processing-Phase/Wildcards.txt Wildcards.txt
 mv Processing-Phase/CIDR-IPs.txt CIDR-IPs.txt
 mv Processing-Phase/just-IPs.txt just-IPs.txt
 
-hostssize=$(du -abc pDNSf-hosts.txt | print_size $(awk '{print $1}'))
-hostsnum=$(wc -l < pDNSf-hosts.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 
 wildcardsize=$(du -abc Wildcards.txt | print_size $(awk '{print $1}'))
 wildcardnum=$(wc -l < Wildcards.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
@@ -262,6 +265,9 @@ echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j
 ipsize=$(du -abc just-IPs.txt | print_size $(awk '{print $1}'))
 ipnum=$(wc -l < just-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - just-IPs.txt > temp && mv temp just-IPs.txt
+
+hostssize=$(du -abc pDNSf-hosts.txt | print_size $(awk '{print $1}'))
+hostsnum=$(echo $[$(wc -l < pDNSf-hosts.txt)+$(wc -l < just-IPs.txt)] | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 
 split -a 1 -C 30M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
