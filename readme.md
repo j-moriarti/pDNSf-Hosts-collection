@@ -21,7 +21,7 @@
 
 <h4>
     
-    Number of Domains: 4,442,098
+    Number of Domains+IPs: 4,442,098
     
     Hosts File Size: 77.7 MB
     
