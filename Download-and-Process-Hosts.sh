@@ -191,7 +191,7 @@ mv RAW-Filters/COMBINED-RAW-HOSTS.TXT Processing-Phase/COMBINED-RAW-HOSTS.TXT
 
 cd Processing-Phase/
 rm -f CIDR-IPs.txt
-sed '/^#/d;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\/[0-9]\{1,2\}$/!d' COMBINED-RAW-HOSTS.TXT > CIDR-IPs.txt
+sed '/^#/d;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\/[0-9]\{1,2\}$/!d' COMBINED-RAW-HOSTS.TXT | sort -V -o CIDR-IPs.txt
 
 rm -f 1-cleaned.txt
 sed '/^#\|^$\|^\t*$\|^!\|^||\|^|http\|\^\|(\|)\|\[\|\]\|{\|}\|=\|@\|<\|>\|%\|\$\|,\|;\|\/\|^\.\|\.$/d' COMBINED-RAW-HOSTS.TXT > 1-cleaned.txt
@@ -232,7 +232,7 @@ sort -i -s -u -o 4-sorted.txt 3-reversed.txt
 rm -f 3-reversed.txt
 perl -nlE 'say reverse split "([.])"' 4-sorted.txt > 6-final-output.txt
 rm -f 4-sorted.txt
-sed '/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' 6-final-output.txt > just-IPs.txt
+sed '/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' 6-final-output.txt | sort -V -o just-IPs.txt
 
 
 ## remove domains with invalid tlds (heavy process! for worst scenario only!)
