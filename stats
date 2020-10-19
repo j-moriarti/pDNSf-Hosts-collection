@@ -1,89 +1,90 @@
-Name                                                    Size     Domains   Last Update Time (server-side)
-____________________________________________________  _________  ________  ________________
-abpvn.txt.raw                                          557.0 KB  21527     2020-10-18 14:00
-antisocial_blacklist_community_v1.txt.raw              457.1 KB  34145     2020-10-19 07:12
-anudeepnd_coinminer.txt.raw                            144.1 KB  5950      2020-10-19 07:12
-badips_list_any-age-3days.txt.raw                        9.6 KB  683       2020-10-19 07:12
-binarydefense_banlist.txt.raw                           74.9 KB  5350      2020-10-19 06:32
-blocklist.de_lists_all.txt.raw                         398.5 KB  28620     2020-10-19 06:50
-cbuijs_shallalist_adv.txt.raw                          170.5 KB  9889      2020-10-19 07:12
-cbuijs_shallalist_tracker.txt.raw                       21.8 KB  1261      2020-10-19 07:12
-chef-koch_ads-tracker-hosts.txt.raw                      2.1 MB  67518     2020-10-19 07:12
-chef-koch_anti-fpt-hosts.txt.raw                       517.7 KB  15971     2020-10-19 07:12
-chef-koch_apple-telemetry-hosts.txt.raw                  8.9 KB  251       2020-10-19 07:12
-chef-koch_coinminer_hosts.txt.raw                        2.0 MB  67624     2020-10-19 07:12
-chef-koch_crashlytics_hosts.txt.raw                      1.7 KB  61        2020-10-19 07:12
-chef-koch_malware_hosts.txt.raw                          4.5 MB  167200    2020-10-19 07:12
-chef-koch_nsablocklist_hosts-mirror.txt.raw            198.9 KB  8223      2020-10-19 07:12
-chef-koch_spotify-ad-free-mirror.txt.raw               127.2 KB  3777      2020-10-19 07:12
-crazy-max_windowsspyblocker_dnscrypt_extra.txt.raw       5.9 KB  198       2020-10-19 07:12
-crazy-max_windowsspyblocker_dnscrypt_spy.txt.raw         8.7 KB  339       2020-10-19 07:12
-crazy-max_windowsspyblocker_extra.txt.raw                8.8 KB  235       2020-10-19 07:12
-crazy-max_windowsspyblocker_spy.txt.raw                 12.7 KB  374       2020-10-19 07:12
-dandelionsprout_antimalwarehosts.txt.raw                 8.5 KB  249       2020-10-19 07:12
-developerdan_ads-and-tracking-extended.txt.raw           6.8 MB  218967    2020-10-19 01:05
-developerdan_amp-hosts-extended.txt.raw                367.2 KB  8063      2020-10-19 01:05
-developerdan_tracking-aggressive-extended.txt.raw      402.3 KB  11655     2020-10-19 01:05
-dnswarden_block-3rd-party-cnames.txt.raw                 420 B   25        2020-10-19 07:12
-drsdavidsoft_activation.txt.raw                          7.8 KB  422       2020-10-19 07:12
-drsdavidsoft_adservers-and-trackers.txt.raw             18.6 KB  1004      2020-10-19 07:12
-drsdavidsoft_unwanted-iranian.txt.raw                    5.2 KB  378       2020-10-19 07:12
-eladkarako_raw-hosts.txt.raw                            33.1 MB  1722463   2020-10-19 07:12
-energized_ips-list.txt.raw                               1.9 MB  140117    2020-10-19 06:06
-energized_regional-domains.txt.raw                     462.6 KB  30842     2020-10-19 06:06
-energized_social-domains.txt.raw                       164.6 KB  6884      2020-10-19 06:06
-energized_ultimate-domains.txt.raw                      19.6 MB  925859    2020-10-19 06:06
-energized_xtreme-domains.txt.raw                       174.5 KB  8681      2020-10-19 06:06
-feodotracker_ipblocklist-recommended.txt.raw             2.4 KB  148       2020-10-19 07:05
-firebog_joewein.txt.raw                                  1.2 MB  71126     2020-10-16 04:45
-firebog_joeylane.txt.raw                               839.3 KB  43157     2020-10-16 14:01
-firebog_w3kbl.txt.raw                                   15.1 KB  807       2020-05-30 01:08
-frogeye_firstparty-trackers-hosts.txt.raw                1.0 MB  37895     2020-10-18 22:48
-gameindustry_hosts.txt.raw                             741.8 KB  27250     2020-10-19 07:12
-greatis_anti-webminer_blacklist.txt.raw                  7.4 KB  491       2020-10-19 07:12
-jerryn70_goodbyeads-leeco-extension.txt.raw              4.1 KB  137       2020-10-19 07:12
-jerryn70_goodbyeads-samsung-adblock.txt.raw              4.1 KB  125       2020-10-19 07:12
-jerryn70_goodbyeads-xiaomi-extension.txt.raw             9.4 KB  319       2020-10-19 07:12
-jerryn70_goodbyeads-youtube-adblock.txt.raw              3.8 MB  97658     2020-10-19 07:12
-jerryn70_goodbyeads.txt.raw                              5.1 MB  196151    2020-10-19 07:12
-kowith337_hosts_badbait_th.txt.raw                       2.8 KB  78        2020-10-19 07:12
-kowith337_hosts_google_hotword.txt.raw                   7.8 KB  215       2020-10-19 07:12
-kowith337_hosts_leftover.txt.raw                        25.6 KB  875       2020-10-19 07:12
-lassekongo83_frellwits-swedish-hosts-file.txt.raw       22.0 KB  775       2020-10-19 07:12
-majkiit_polish-ads-filter_hostfile.txt.raw              78.0 KB  3287      2020-10-19 07:12
-malwaredomains_justdomains.txt.raw                     580.7 KB  26856     2020-08-13 22:35
-mkb2091_domains.txt.raw                                 24.4 MB  1123768   2020-10-19 07:12
-mkb2091_ip-blocklist.txt.raw                             2.9 MB  218284    2020-10-19 07:12
-netlab-360_dga_domains.txt.raw                          26.3 MB  1322823   2020-10-19 07:13
-nextdns_cname-cloaking-blocklist.txt.raw                 1.2 KB  57        2020-10-19 07:12
-notracking_dnscrypt-proxy.blacklist.txt.raw              4.9 MB  248748    2020-10-19 07:12
-notracking_hostnames.txt.raw                             5.9 MB  189260    2020-10-19 07:12
-oisd_dbl.txt.raw                                        20.3 MB  957363    2020-10-19 06:07
-oisd_dbl_light.txt.raw                                 901.3 KB  49728     2020-10-18 22:21
-osint_latestdomains.txt.raw                             39.8 KB  2222      2020-10-19 06:13
-perflyst_amazonfiretv.txt.raw                            1.4 KB  69        2020-10-19 07:12
-perflyst_android-tracking.txt.raw                        2.1 KB  112       2020-10-19 07:12
-perflyst_smarttv.txt.raw                                 9.3 KB  317       2020-10-19 07:12
-phishing_army_blocklist.txt.raw                        320.2 KB  14732     2020-10-19 03:11
-phishing_army_blocklist_extended.txt.raw               371.8 KB  17925     2020-10-19 03:11
-polishfiltersteam_kadhosts.txt.raw                     358.4 KB  12947     2020-10-19 07:12
-quidsup_notrack-blocklist.txt.raw                      353.4 KB  13441     2020-10-19 07:12
-shadowwhisperer_ads.txt.raw                              1.3 MB  62701     2020-10-19 07:12
-shadowwhisperer_apple.txt.raw                            1.6 KB  34        2020-10-19 07:12
-shadowwhisperer_bitcoin.txt.raw                          5.7 KB  410       2020-10-19 07:12
-shadowwhisperer_bloat.txt.raw                           49.9 KB  653       2020-10-19 07:12
-shadowwhisperer_chat.txt.raw                             3.7 KB  191       2020-10-19 07:12
-shadowwhisperer_dynamic.txt.raw                         21.4 KB  1626      2020-10-19 07:12
-shadowwhisperer_malware-scam-typo.txt.raw                1.7 MB  104253    2020-10-19 07:12
-shadowwhisperer_malware.txt.raw                        251.5 KB  13457     2020-10-19 07:12
-shadowwhisperer_marketing-email.txt.raw                113.5 KB  9541      2020-10-19 07:12
-shadowwhisperer_marketing.txt.raw                       14.3 KB  473       2020-10-19 07:12
-shadowwhisperer_microsoft.txt.raw                       21.5 KB  509       2020-10-19 07:12
-shadowwhisperer_remote.txt.raw                           7.1 KB  322       2020-10-19 07:12
-shadowwhisperer_scam.txt.raw                            33.1 KB  1773      2020-10-19 07:12
-shadowwhisperer_suspicious.txt.raw                     159.9 KB  9124      2020-10-19 07:12
-shadowwhisperer_tracking.txt.raw                         1.9 MB  84355     2020-10-19 07:12
-shadowwhisperer_typo.txt.raw                             1.4 MB  89041     2020-10-19 07:12
-tg12_bad_packets_list.txt.raw                           24.6 KB  1764      2020-10-19 07:12
-yhonay-antipopads.txt.raw                              222.4 KB  11938     2020-10-19 07:12
-total                                                  182.0 MB  8586116
+Name                                            Size     Domains 
+____________________________________________  _________  ________
+abpvn                                          557.0 KB  21527
+antisocial_blacklist_community_v1              457.1 KB  34145
+anudeepnd_coinminer                            144.1 KB  5950
+badips_list_any-age-3days                        6.0 KB  429
+binarydefense_banlist                           79.0 KB  5640
+blocklist.de_lists_all                         387.6 KB  27836
+cbuijs_shallalist_adv                          170.5 KB  9889
+cbuijs_shallalist_tracker                       21.8 KB  1261
+chef-koch_ads-tracker-hosts                      2.1 MB  67518
+chef-koch_anti-fpt-hosts                       517.7 KB  15971
+chef-koch_apple-telemetry-hosts                  8.9 KB  251
+chef-koch_coinminer_hosts                        2.0 MB  67624
+chef-koch_crashlytics_hosts                      1.7 KB  61
+chef-koch_malware_hosts                          4.5 MB  167200
+chef-koch_nsablocklist_hosts-mirror            198.9 KB  8223
+chef-koch_spotify-ad-free-mirror               127.2 KB  3777
+crazy-max_windowsspyblocker_dnscrypt_extra       5.9 KB  198
+crazy-max_windowsspyblocker_dnscrypt_spy         8.7 KB  339
+crazy-max_windowsspyblocker_extra                8.8 KB  235
+crazy-max_windowsspyblocker_spy                 12.7 KB  374
+dandelionsprout_antimalwarehosts                 8.5 KB  249
+developerdan_ads-and-tracking-extended           6.8 MB  219099
+developerdan_amp-hosts-extended                367.2 KB  8063
+developerdan_tracking-aggressive-extended      402.3 KB  11655
+dnswarden_block-3rd-party-cnames                 420 B   25
+drsdavidsoft_activation                          7.8 KB  422
+drsdavidsoft_adservers-and-trackers             18.6 KB  1004
+drsdavidsoft_unwanted-iranian                    5.2 KB  378
+eladkarako_raw-hosts                            33.1 MB  1722629
+energized_ips-list                               1.9 MB  142284
+energized_regional-domains                     462.9 KB  30861
+energized_social-domains                       164.6 KB  6884
+energized_ultimate-domains                      19.6 MB  925833
+energized_xtreme-domains                       174.5 KB  8681
+exodus-privacy_trackers                          5.5 KB  371
+feodotracker_ipblocklist-recommended             2.6 KB  159
+firebog_joewein                                  1.2 MB  71126
+firebog_joeylane                               839.3 KB  43157
+firebog_w3kbl                                   15.1 KB  807
+frogeye_firstparty-trackers-hosts                1.0 MB  37895
+gameindustry_hosts                             741.8 KB  27250
+greatis_anti-webminer_blacklist                  7.4 KB  491
+jerryn70_goodbyeads-leeco-extension              4.1 KB  137
+jerryn70_goodbyeads-samsung-adblock              4.1 KB  125
+jerryn70_goodbyeads-xiaomi-extension             9.4 KB  319
+jerryn70_goodbyeads-youtube-adblock              3.8 MB  97658
+jerryn70_goodbyeads                              5.1 MB  196151
+kowith337_hosts_badbait_th                       2.8 KB  78
+kowith337_hosts_google_hotword                   7.8 KB  215
+kowith337_hosts_leftover                        25.6 KB  875
+lassekongo83_frellwits-swedish-hosts-file       22.0 KB  775
+majkiit_polish-ads-filter_hostfile              78.0 KB  3287
+malwaredomains_justdomains                     580.7 KB  26856
+mkb2091_domains                                 24.6 MB  1130914
+mkb2091_ip-blocklist                             3.2 MB  237944
+netlab-360_dga_domains                          26.3 MB  1322967
+nextdns_cname-cloaking-blocklist                 1.2 KB  57
+notracking_dnscrypt-proxy.blacklist              4.9 MB  248748
+notracking_hostnames                             5.9 MB  189260
+oisd_dbl                                        20.3 MB  957363
+oisd_dbl_light                                 901.3 KB  49728
+osint_latestdomains                             39.8 KB  2223
+perflyst_amazonfiretv                            1.4 KB  69
+perflyst_android-tracking                        2.1 KB  112
+perflyst_smarttv                                 9.3 KB  317
+phishing_army_blocklist                        325.4 KB  14963
+phishing_army_blocklist_extended               378.1 KB  18224
+polishfiltersteam_kadhosts                     358.5 KB  12953
+quidsup_notrack-blocklist                      353.4 KB  13441
+shadowwhisperer_ads                              1.3 MB  62701
+shadowwhisperer_apple                            1.6 KB  34
+shadowwhisperer_bitcoin                          5.7 KB  410
+shadowwhisperer_bloat                           49.9 KB  653
+shadowwhisperer_chat                             3.7 KB  191
+shadowwhisperer_dynamic                         21.4 KB  1626
+shadowwhisperer_malware-scam-typo                1.7 MB  104253
+shadowwhisperer_malware                        251.5 KB  13457
+shadowwhisperer_marketing-email                113.5 KB  9541
+shadowwhisperer_marketing                       14.3 KB  473
+shadowwhisperer_microsoft                       21.5 KB  509
+shadowwhisperer_remote                           7.1 KB  322
+shadowwhisperer_scam                            33.1 KB  1773
+shadowwhisperer_suspicious                     159.9 KB  9124
+shadowwhisperer_tracking                         1.9 MB  84355
+shadowwhisperer_typo                             1.4 MB  89041
+tg12_bad_packets_list                           24.6 KB  1764
+yhonay-antipopads                              222.4 KB  11938
+total                                          182.4 MB  8615695
