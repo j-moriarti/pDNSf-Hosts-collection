@@ -35,14 +35,10 @@ curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o crazy-max_windowsspyblocker_dnscrypt_extra.txt.raw  https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/extra.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o notracking_dnscrypt-proxy.blacklist.txt.raw         https://raw.githubusercontent.com/notracking/hosts-blocklists/master/dnscrypt-proxy/dnscrypt-proxy.blacklist.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o notracking_hostnames.txt.raw                        https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt
-#curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_audio-fingerprinting-pages.txt.raw        https://raw.githubusercontent.com/CHEF-KOCH/NSABlocklist/master/Tests/Audio%20Fingerprinting%20pages/Hosts.txt
-#curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_microsoft.txt.raw                         https://raw.githubusercontent.com/CHEF-KOCH/NSABlocklist/master/Tests/Microsoft/MS.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_apple-telemetry-hosts.txt.raw             https://gitlab.com/CHEF-KOCH/cks-filterlist/-/raw/master/Anti-Corp/hosts/AppleTelemetry.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_ads-tracker-hosts.txt.raw                 https://gitlab.com/CHEF-KOCH/cks-filterlist/-/raw/master/hosts/Ads-tracker.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_anti-fpt-hosts.txt.raw                    https://gitlab.com/CHEF-KOCH/cks-filterlist/-/raw/master/hosts/Anti-FPT.txt
-#curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_spotify-ad-free.txt.raw                   https://raw.githubusercontent.com/CHEF-KOCH/Spotify-Ad-free/master/filters/Spotify-HOSTS.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_spotify-ad-free-mirror.txt.raw            https://gitlab.com/CHEF-KOCH/cks-filterlist/-/raw/master/Anti-Corp/Spotify/Spotify-HOSTS.txt
-#curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_nsablocklist_hosts.txt.raw                https://raw.githubusercontent.com/CHEF-KOCH/NSABlocklist/master/HOSTS/HOSTS
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_nsablocklist_hosts-mirror.txt.raw         https://gitlab.com/CHEF-KOCH/cks-filterlist/-/raw/master/Anti-Corp/hosts/NSABlocklist.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_crashlytics_hosts.txt.raw                 https://gitlab.com/CHEF-KOCH/cks-filterlist/-/raw/master/hosts/Crashlytics.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o chef-koch_malware_hosts.txt.raw                     https://gitlab.com/CHEF-KOCH/cks-filterlist/-/raw/master/hosts/Malware.txt
@@ -68,7 +64,6 @@ curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o polishfiltersteam_kadhosts.txt.raw                  https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o majkiit_polish-ads-filter_hostfile.txt.raw          https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o anudeepnd_coinminer.txt.raw                         https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt
-#curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o jawz101_mobileadtrackers.txt.raw                    https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o quidsup_notrack-blocklist.txt.raw                   https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o cbuijs_shallalist_adv.txt.raw                       https://raw.githubusercontent.com/cbuijs/shallalist/master/adv/domains
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o cbuijs_shallalist_tracker.txt.raw                   https://raw.githubusercontent.com/cbuijs/shallalist/master/tracker/domains
@@ -124,6 +119,10 @@ curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --
 cat netlab-360_dga.txt.raw | sed '/^#/d' | awk '{print $2 }' > netlab-360_dga_domains.txt.raw
 rm -f netlab-360_dga.txt.raw
 
+curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o exodus-privacy_trackers.json.raw                    https://etip.exodus-privacy.eu.org/trackers/export
+sed 's/}/\n/g' exodus-privacy_trackers.json.raw | sed 's/^.*:\/\///g;/.*\/.*\/.*/d;s/\/\"$//;s/\"$//;/\//d;/\./!d' > exodus-privacy_trackers.txt.raw
+rm -f exodus-privacy_trackers.json.raw
+
 #curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o dga-feed.gz                                         https://osint.bambenekconsulting.com/feeds/dga-feed.gz
 #gzip -N -d dga-feed.gz
 #sed 's/,Domain .*$//' dga-feed-all.csv > dga-feed.txt.raw
@@ -133,8 +132,10 @@ currdate="$(date -u +%Y-%m-%d)"
 currtime="$(date -u +%H:%M:%S)"
 currdatetime="$(date -u +%Y-%m-%d_%H-%M)"
 
-echo -e "Last Update Time (server-side)\n________________" > tmp5
-ls -1 *.txt.raw | while read line; do date -r $line "+%Y-%m-%d %H:%M"; done >> tmp5
+
+#echo -e "Last Update Time (server-side)\n________________" > tmp5
+#ls -1 *.txt.raw | while read line; do date -r $line "+%Y-%m-%d %H:%M"; done >> tmp5
+
 
 #tar -czf ../output/sources-backup-$currdatetime.tar.gz *.txt.raw
 cd ..
@@ -161,17 +162,17 @@ do
     print_size $line 2 >> tmp2
 done
 
-echo -e "Name \n____________________________________________________" > tmp3
-du -abc *.txt.raw | awk '{print $2 }' >> tmp3
+echo -e "Name \n____________________________________________" > tmp3
+du -abc *.txt.raw | awk '{print $2 }' | sed 's/\.txt\.raw$//' >> tmp3
 
 paste tmp3 tmp2 | column -s $'\t' -t > tmp4
-paste tmp4 tmp1 | column -s $'\t' -t > tmp3
-paste tmp3 tmp5 | column -s $'\t' -t > stats
+paste tmp4 tmp1 | column -s $'\t' -t > stats
+#paste tmp3 tmp5 | column -s $'\t' -t > stats
 rm -f tmp1
 rm -f tmp2
 rm -f tmp3
 rm -f tmp4
-rm -f tmp5
+#rm -f tmp5
 rm -f ../stats
 mv stats ..
 
