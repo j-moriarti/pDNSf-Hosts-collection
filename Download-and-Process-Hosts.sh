@@ -125,7 +125,7 @@ curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o gameindustry_ministerien-behoerden_hosts.txt.raw    https://hosts.gameindustry.eu/ministerien-und-behoerden/
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o gameindustry_nihon-no-toshi_hosts.txt.raw           https://hosts.gameindustry.eu/nihon-no-toshi/
 sed -i 's/<.*$//;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' gameindustry_adobe-inc_hosts.txt.raw
-sed -i '/^0\.0\.0\.0 /!d;s/^0\.0\.0\.0 //;s/<br \/>$//;s/ .*$//' gameindustry_amazon-com-inc_hosts.txt.raw gameindustry_staedte-gemeinden_hosts.txt.raw gameindustry_ministerien-behoerden_hosts.txt.raw gameindustry_nihon-no-toshi_hosts.txt.raw
+sed -i '/^0\.0\.0\.0 /!d;s/^0\.0\.0\.0 //;s/<.*$//;s/ .*$//' gameindustry_amazon-com-inc_hosts.txt.raw gameindustry_staedte-gemeinden_hosts.txt.raw gameindustry_ministerien-behoerden_hosts.txt.raw gameindustry_nihon-no-toshi_hosts.txt.raw
 
 
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o netlab-360_dga.txt.raw                              https://data.netlab.360.com/feeds/dga/dga.txt
