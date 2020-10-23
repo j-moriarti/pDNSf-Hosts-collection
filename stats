@@ -3,9 +3,9 @@ ____________________________________________  _________  ________
 abpvn                                          550.7 KB  21332
 antisocial_blacklist_community_v1              457.1 KB  34145
 anudeepnd_coinminer                            144.1 KB  5950
-badips_list_any-age-3days                        6.4 KB  455
-binarydefense_banlist                            5.6 KB  395
-blocklist.de_lists_all                         398.6 KB  28612
+badips_list_any-age-3days                        6.3 KB  453
+binarydefense_banlist                            6.9 KB  484
+blocklist.de_lists_all                         396.1 KB  28427
 cbuijs_shallalist_adv                          170.5 KB  9889
 cbuijs_shallalist_tracker                       21.8 KB  1261
 chef-koch_ads-tracker-hosts                      2.1 MB  67518
@@ -46,7 +46,6 @@ gameindustry_android_full_hosts                 20.2 KB  737
 gameindustry_gaming_full_hosts                 366.0 KB  13035
 gameindustry_main_hosts                        744.5 KB  27345
 gameindustry_ministerien-behoerden_hosts         892 B   49
-gameindustry_nihon-no-toshi_hosts                1.8 KB  84
 gameindustry_spyware-services-in-games_ip        5.0 KB  291
 gameindustry_staedte-gemeinden_hosts             6.7 KB  322
 gameindustry_webserver-security_ip              13.6 KB  921
@@ -62,13 +61,13 @@ kowith337_hosts_leftover                        25.6 KB  875
 lassekongo83_frellwits-swedish-hosts-file       22.0 KB  777
 majkiit_polish-ads-filter_hostfile              78.0 KB  3288
 malwaredomains_justdomains                     580.7 KB  26856
-mkb2091_domains                                 25.3 MB  1163790
-mkb2091_ip-blocklist                             3.4 MB  252039
+mkb2091_domains                                 25.3 MB  1166215
+mkb2091_ip-blocklist                             3.4 MB  252062
 netlab-360_dga_domains                          26.3 MB  1323573
 nextdns_cname-cloaking-blocklist                 1.2 KB  57
 notracking_dnscrypt-proxy.blacklist              5.0 MB  253510
 notracking_hostnames                             6.0 MB  191254
-oisd_dbl                                        20.4 MB  964295
+oisd_dbl                                        20.4 MB  964270
 oisd_dbl_light                                 914.2 KB  50510
 osint_latestdomains                             39.0 KB  2189
 perflyst_amazonfiretv                            1.4 KB  69
@@ -96,4 +95,4 @@ shadowwhisperer_tracking                         2.0 MB  88128
 shadowwhisperer_typo                             1.5 MB  89959
 tg12_bad_packets_list                           24.6 KB  1764
 yhonay-antipopads                              222.4 KB  11938
-total                                          184.7 MB  8719595
+total                                          184.7 MB  8721836
