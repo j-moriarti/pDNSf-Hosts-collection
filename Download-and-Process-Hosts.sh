@@ -209,7 +209,7 @@ rm -f CIDR-IPs.txt
 sed '/^#/d;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\/[0-9]\{1,2\}$/!d' COMBINED-RAW-HOSTS.TXT | sort -V -o CIDR-IPs.txt
 
 rm -f 1-cleaned.txt
-sed '/^#\|^$\|^\t*$\|^!\|^||\|^|http\|\^\|(\|)\|\[\|\]\|{\|}\|=\|@\|<\|>\|%\|\$\|,\|;\|\/\|^\.\|\.$/d' COMBINED-RAW-HOSTS.TXT > 1-cleaned.txt
+sed '/^#\|^$\|^\t*$\|^!\|^||\|^|http/d;s/^.*[0-9]	*  *	*//;s/^.*[0-9]	* *		*//;s/^127\.0\.0\.1  *//;s/^::  *//;s/^::\.//;s/^\*\.//;s/ *	* *#.*$//;s/	*  *	*$//;s/		* *	*$//;s/\\$//;s/:443$//;s/:80$//;s/^www\.//;/  */d;/^-/d' COMBINED-RAW-HOSTS.TXT > 1-cleaned.txt
 
 rm -f COMBINED-RAW-HOSTS.TXT
 rm -f 2-no-www.txt
@@ -217,7 +217,7 @@ rm -f 2-temp.txt
 rm -f Wildcards.txt
 rm -f just-IPs.txt
 
-sed 's/^.*[0-9]	*  *	*//;s/^.*[0-9]	* *		*//;s/^127\.0\.0\.1  *//;s/^::  *//;s/^::\.//;s/^\*\.//;s/ *	* *#.*$//;s/	*  *	*$//;s/		* *	*$//;s/\\$//;s/:443$//;s/:80$//;s/^www\.//;/  */d;/^-/d' 1-cleaned.txt > 2-temp.txt
+sed '/^#\|^$\|^\t*$\|^!\|^||\|^|http\|\^\|(\|)\|\[\|\]\|{\|}\|=\|@\|<\|>\|%\|\$\|,\|;\|\/\|^\.\|\.$/d' 1-cleaned.txt > 2-temp.txt
 
 rm -f 1-cleaned.txt
 
