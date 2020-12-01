@@ -21,7 +21,7 @@
 
 <h4>
     
-    Number of Domains+IPs: 4,711,361
+    Number of Domains+IPs: 4,715,294
     
     Hosts File Size: 85.7 MB
     
@@ -29,30 +29,37 @@
     
 </h4>
 
+<br>
+</br>
 
-<br> </br>
+### A: (Set & Forget Method)
 ### Download Hosts in multi-part (Domains-only Format)
-
+(Add these links directly to pDNSf config)
 | Name | Download link | Size |
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | 30.0 MB |
 | pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | 30.0 MB |
 | pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 25.7 MB |
 
-<br> </br>
-### Download GZip Compressed Hosts (Domains-only Format)
+<br>
+</br>
 
+### B: (Manual Method)
+### Download GZip Compressed Hosts (Domains-only Format)
+(First, download and extract (uncompress) 'pDNSf-hosts.txt.gz' to somewhere, then add the LOCAL PATH of 'pDNSf-hosts.txt' to pDNSf config)
 | Name | Download link | Size |
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | 25.2 MB |
 
-<br> </br>
+<br>
+</br>
+
 ### Download Extra Hosts (IPs-only & Domains-only Format)
 
 | Name | Download link | Size | # of Lines |
 |:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 47.1 KB | 3,005 |
-| Wildcard Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | 1.3 KB | 73 |
-| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 7.1 MB | 520,810 |
+| CIDR-IPs Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 47.7 KB | 3,045 |
+| Wildcard Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | 1.4 KB | 74 |
+| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 7.1 MB | 523,990 |
 
 </div>
