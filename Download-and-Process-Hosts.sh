@@ -176,7 +176,8 @@ cat netlab-360_dga.txt.raw | sed '/^#/d' | awk '{print $2 }' > netlab-360_dga_do
 rm -f netlab-360_dga.txt.raw
 
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o exodus-privacy_trackers.json.raw                    https://etip.exodus-privacy.eu.org/trackers/export
-sed 's/}/\n/g' exodus-privacy_trackers.json.raw | sed 's/^.*:\/\///g;/.*\/.*\/.*/d;s/\/\"$//;s/\"$//;/\//d;/\./!d' > exodus-privacy_trackers.txt.raw
+#sed 's/}/\n/g' exodus-privacy_trackers.json.raw | sed 's/^.*:\/\///g;/.*\/.*\/.*/d;s/\/\"$//;s/\"$//;/\//d;/\./!d' > exodus-privacy_trackers.txt.raw
+sed 's/"network_signature": "/\n/g' exodus-privacy_trackers.json.raw | sed 's/", "website": "/\n/g;s/"}.*//;s/|/\n/g' | sed 's/\\\\//g;s/^\.//;s/^https*:\/\///;s/:.*//;s/\/.*//;s/\.$/\.\*/;/\./!d;/{\|^$\|^github\.com$\|^developer\.amazon\.com$\|^www\.developer\.amazon\.com$\|^cloud\.google\.com$\|^www\.adobe\.com$\|^developers\.google\.com$\|^google\.com$\|^www\.google\.com$\|^www\.googletagmanager\.com$\|^azure\.microsoft\.com$\|^docs\.microsoft\.com$/d;' | sort -u -o exodus-privacy_trackers.txt.raw
 rm -f exodus-privacy_trackers.json.raw
 
 #curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o dga-feed.gz                                         https://osint.bambenekconsulting.com/feeds/dga-feed.gz
