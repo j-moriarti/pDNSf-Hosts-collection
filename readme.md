@@ -21,9 +21,9 @@
 
 <h4>
     
-    Number of Domains+IPs: 4,715,294
+    Number of Domains+IPs: 4,751,833
     
-    Hosts File Size: 85.7 MB
+    Hosts File Size: 86.4 MB
     
     Auto Updates: Every 24hrs
     
@@ -39,7 +39,7 @@
 |:---------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | 30.0 MB |
 | pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | 30.0 MB |
-| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 25.7 MB |
+| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 26.4 MB |
 
 <br>
 </br>
@@ -49,7 +49,7 @@
 (First, download and extract (uncompress) 'pDNSf-hosts.txt.gz' to somewhere, then add the LOCAL PATH of 'pDNSf-hosts.txt' to pDNSf config)
 | Name | Download link | Size |
 |:---------:|:-------:|:-------:|
-| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | 25.2 MB |
+| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | 25.4 MB |
 
 <br>
 </br>
@@ -60,6 +60,6 @@
 |:---------:|:-------:|:-------:|:-------:|
 | CIDR-IPs Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 47.7 KB | 3,045 |
 | Wildcard Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | 1.4 KB | 74 |
-| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 7.1 MB | 523,990 |
+| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 7.1 MB | 527,201 |
 
 </div>
