@@ -50,6 +50,14 @@ jobs:
         overwrite: true
         file_glob: true
         body: "These files get automatically updated (and replaced) every 24 hours. (DON'T PAY ATTENTION TO THE RELEASE DATE WRITTEN ABOVE!!, RELEASE DATE IS MENTIONED AT THE FIRST LINE OF FILES!!)"
+    - name: Update Mirror Links
+      uses: deka0106/upload-to-dropbox@v2
+      with:
+        dropbox_access_token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+        src: output/main/*
+        dest: /mirror/
+        multiple: true
+        mode: overwrite
     - name: Cleanup
       run: rm -f -r output/
 
