@@ -21,7 +21,7 @@
 
 <h4>
     
-    Number of Domains+IPs: 4,933,543
+    Number of Domains+IPs: 4,934,332
     
     Hosts File Size: 91.1 MB
     
@@ -35,11 +35,11 @@
 ### A: (Set & Forget Method)
 ### Download Hosts in multi-part (Domains-only Format)
 (Add these links directly to pDNSf config)
-| Name | Download link | Size |
-|:---------:|:-------:|:-------:|
-| pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | 35.0 MB |
-| pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | 35.0 MB |
-| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | 21.1 MB |
+| Name | Download Link | Mirror Link | Size |
+|:----:|:-------:|:-------:|:-------:|
+| pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | [Mirror (Part 0)](https://www.dropbox.com/s/9jpe80edva776ei/pDNSf-hosts-part0.txt?dl=1) | 35.0 MB |
+| pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | [Mirror (Part 1)](https://www.dropbox.com/s/d1x9nrjn8wmdgkn/pDNSf-hosts-part1.txt?dl=1) | 35.0 MB |
+| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | [Mirror (Part 2)](https://www.dropbox.com/s/500rbwazmyotd5c/pDNSf-hosts-part2.txt?dl=1) | 21.1 MB |
 
 <br>
 </br>
@@ -47,19 +47,19 @@
 ### B: (Manual Method)
 ### Download GZip Compressed Hosts (Domains-only Format)
 (First, download and extract (uncompress) 'pDNSf-hosts.txt.gz' to somewhere, then add the LOCAL PATH of 'pDNSf-hosts.txt' to pDNSf config)
-| Name | Download link | Size |
-|:---------:|:-------:|:-------:|
-| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | 26.4 MB |
+| Name | Download Link | Mirror Link | Size |
+|:----:|:-------:|:-------:|:-------:|
+| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | [Mirror](https://www.dropbox.com/s/0qkl500uldf0ryo/pDNSf-hosts.txt.gz?dl=1) | 26.4 MB |
 
 <br>
 </br>
 
 ### Download Extra Hosts (IPs-only & Domains-only Format)
 
-| Name | Download link | Size | # of Lines |
-|:---------:|:-------:|:-------:|:-------:|
-| CIDR-IPs Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | 50.1 KB | 3,178 |
-| Wildcard Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | 1.5 KB | 81 |
-| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | 7.1 MB | 523,613 |
+| Name | Download Link | Mirror Link | Size | # of Lines |
+|:---------:|:-------:|:--------:|:-------:|:-------:|
+| CIDR-IPs Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | [Mirror](https://www.dropbox.com/s/ef6ya9o2wf0rqy0/CIDR-IPs.txt?dl=1) | 50.1 KB | 3,178 |
+| Wildcard Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | [Mirror](https://www.dropbox.com/s/v1hdmolkekzevhl/Wildcards.txt?dl=1) | 1.5 KB | 81 |
+| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | [Mirror](https://www.dropbox.com/s/r7685b8ahxhro2d/just-IPs.txt?dl=1) | 7.1 MB | 524,196 |
 
 </div>
