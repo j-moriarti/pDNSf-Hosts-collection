@@ -1,1 +1,1 @@
-test-mirrors;
+finalize mirrors;
