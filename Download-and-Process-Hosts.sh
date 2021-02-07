@@ -92,7 +92,6 @@ curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o shadowwhisperer_microsoft.txt.raw                   https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Microsoft
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o shadowwhisperer_remote.txt.raw                      https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Remote
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o shadowwhisperer_scam.txt.raw                        https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Scam
-curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o shadowwhisperer_suspicious.txt.raw                  https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Suspicious
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o shadowwhisperer_tracking.txt.raw                    https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Tracking
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o shadowwhisperer_typo.txt.raw                        https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Typo
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o dandelionsprout_antimalwarehosts.txt.raw            https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt
@@ -118,7 +117,7 @@ curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o filtri-dns_filtri.txt.raw                           https://filtri-dns.ga/filtri.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o bigdargon_hostsVN_filters.txt.raw                   https://raw.githubusercontent.com/bigdargon/hostsVN/master/filters/domain-adservers-all.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o bigdargon_hostsVN_hosts.txt.raw                     https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts
-curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o zonefiles-io_compromised_domains_live.txt.raw       https://zonefiles.io/f/compromised/domains/live
+#curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o zonefiles-io_compromised_domains_live.txt.raw       https://zonefiles.io/f/compromised/domains/live
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o zonefiles-io_compromised_ip_live.txt.raw            https://zonefiles.io/f/compromised/ip/live/
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o threatcrowd_feeds_domains.txt.raw                   https://www.threatcrowd.org/feeds/domains.txt
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o zznidar_bar-list.txt.raw                            https://raw.githubusercontent.com/zznidar/BAR/master/BAR-list
@@ -160,9 +159,9 @@ sed -i 's/<.*$//;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' g
 sed -i '/^0\.0\.0\.0 /!d;s/^0\.0\.0\.0 //;s/<.*$//;s/ .*$//' gameindustry_amazon-com-inc_hosts.txt.raw gameindustry_staedte-gemeinden_hosts.txt.raw gameindustry_ministerien-behoerden_hosts.txt.raw
 
 
-curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o netlab-360_dga.txt.raw                              https://data.netlab.360.com/feeds/dga/dga.txt
-cat netlab-360_dga.txt.raw | sed '/^#/d' | awk '{print $2 }' > netlab-360_dga_domains.txt.raw
-rm -f netlab-360_dga.txt.raw
+#curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o netlab-360_dga.txt.raw                              http://data.netlab.360.com/feeds/dga/dga.txt
+#cat netlab-360_dga.txt.raw | sed '/^#/d' | awk '{print $2 }' > netlab-360_dga_domains.txt.raw
+#rm -f netlab-360_dga.txt.raw
 
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o exodus-privacy_trackers.json.raw                    https://etip.exodus-privacy.eu.org/trackers/export
 #sed 's/}/\n/g' exodus-privacy_trackers.json.raw | sed 's/^.*:\/\///g;/.*\/.*\/.*/d;s/\/\"$//;s/\"$//;/\//d;/\./!d' > exodus-privacy_trackers.txt.raw
@@ -325,7 +324,7 @@ echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j
 hostssize=$(du -abc pDNSf-hosts.txt | print_size $(awk '{print $1}'))
 hostsnum=$(echo $[$(wc -l < pDNSf-hosts.txt)+$(wc -l < just-IPs.txt)] | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 
-split -a 1 -C 35M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
+split -a 1 -C 25M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
 part0size="0 B"
 if [ -f pDNSf-hosts-part0.txt ]; then
