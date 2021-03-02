@@ -324,7 +324,7 @@ echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j
 hostssize=$(du -abc pDNSf-hosts.txt | print_size $(awk '{print $1}'))
 hostsnum=$(echo $[$(wc -l < pDNSf-hosts.txt)+$(wc -l < just-IPs.txt)] | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 
-split -a 1 -C 25M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
+split -a 1 -C 30M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
 part0size="0 B"
 if [ -f pDNSf-hosts-part0.txt ]; then
