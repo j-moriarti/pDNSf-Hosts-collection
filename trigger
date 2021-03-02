@@ -1,1 +1,1 @@
-finalize mirrors;
+test split size
