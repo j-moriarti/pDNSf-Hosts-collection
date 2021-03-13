@@ -173,6 +173,9 @@ rm -f exodus-privacy_trackers.json.raw
 #sed 's/,Domain .*$//' dga-feed-all.csv > dga-feed.txt.raw
 #rm -f dga-feed-all.csv
 
+touch mkb2091_whitelist_domains.txt.raw
+curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o mkb2091_whitelist_domains.txt.raw                   https://mkb2091.github.io/blockconvert/output/whitelist_domains.txt
+
 currdate="$(date -u +%Y-%m-%d)"
 currtime="$(date -u +%H:%M:%S)"
 currdatetime="$(date -u +%Y-%m-%d_%H-%M)"
@@ -220,6 +223,7 @@ rm -f tmp4
 #rm -f tmp5
 rm -f ../stats
 mv stats ..
+mv mkb2091_whitelist_domains.txt.raw ../whitelist_domains.txt
 
 #rm -f sources-backup.tar.gz
 #tar -czf sources-backup.tar.gz *.txt.raw
@@ -298,15 +302,31 @@ rm -f tld.txt
 
 cd ..
 rm -f pDNSf-hosts.txt
+rm -f pDNSf-hosts_no-whitelist.txt
 rm -f pDNSf-hosts.txt.gz
+rm -f pDNSf-hosts_no-whitelist.txt.gz
 rm -f pDNSf-hosts-part*.txt
 rm -f Wildcards.txt
 rm -f CIDR-IPs.txt
 rm -f just-IPs.txt
-mv Processing-Phase/6-final-output.txt pDNSf-hosts.txt
+mv Processing-Phase/6-final-output.txt pDNSf-hosts_no-whitelist.txt
 mv Processing-Phase/Wildcards.txt Wildcards.txt
 mv Processing-Phase/CIDR-IPs.txt CIDR-IPs.txt
 mv Processing-Phase/just-IPs.txt just-IPs.txt
+
+
+
+gzip -f -k -9 pDNSf-hosts_no-whitelist.txt
+
+sed -i 's/^www\.//' whitelist_domains.txt
+sort -u -o wl.txt whitelist_domains.txt
+rm -f whitelist_domains.txt
+sort -o pdnsf.txt pDNSf-hosts_no-whitelist.txt
+rm -f pDNSf-hosts_no-whitelist.txt
+comm -23 pdnsf.txt wl.txt > pDNSf-hosts.txt
+rm -f wl.txt
+rm -f pdnsf.txt
+
 
 
 wildcardsize=$(du -abc Wildcards.txt | print_size $(awk '{print $1}'))
@@ -362,6 +382,7 @@ sed -e "s/_hostssize_/$hostssize/g" -e "s/_hostsnum_/$hostsnum/g" -e "s/_wildcar
 
 mv sources-backup-*.zip output/backup/
 mv pDNSf-hosts.txt.gz output/main/
+mv pDNSf-hosts_no-whitelist.txt.gz output/main/
 mv Wildcards.txt output/main/
 mv CIDR-IPs.txt output/main/
 mv just-IPs.txt output/main/
@@ -371,12 +392,20 @@ mv pDNSf-hosts-part*.txt output/main/
 cd output/backup/
 
 curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o pDNSf-hosts-old.txt.gz  https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz
+curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -o pDNSf-hosts_no-whitelist-old.txt.gz  https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts_no-whitelist.txt.gz
 
-if [ $(stat -c%s pDNSf-hosts-old.txt.gz) -lt 100 ]; then
+if [ $(stat -c%s pDNSf-hosts-old.txt.gz) -lt 10000 ]; then
 	rm -f pDNSf-hosts-old.txt.gz
 else
     moddate=$(date -r pDNSf-hosts-old.txt.gz "+%Y-%m-%d_%H-%M")
     mv pDNSf-hosts-old.txt.gz pDNSf-hosts-backup-$moddate.gz
+fi
+
+if [ $(stat -c%s pDNSf-hosts_no-whitelist-old.txt.gz) -lt 10000 ]; then
+	rm -f pDNSf-hosts_no-whitelist-old.txt.gz
+else
+    moddate=$(date -r pDNSf-hosts_no-whitelist-old.txt.gz "+%Y-%m-%d_%H-%M")
+    mv pDNSf-hosts_no-whitelist-old.txt.gz pDNSf-hosts_no-whitelist-backup-$moddate.gz
 fi
 
 echo "Finished."
