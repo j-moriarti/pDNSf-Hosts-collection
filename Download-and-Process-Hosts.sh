@@ -323,9 +323,15 @@ sort -u -o wl.txt whitelist_domains.txt
 rm -f whitelist_domains.txt
 sort -o pdnsf.txt pDNSf-hosts_no-whitelist.txt
 rm -f pDNSf-hosts_no-whitelist.txt
-comm -23 pdnsf.txt wl.txt > pDNSf-hosts.txt
+comm -23 pdnsf.txt wl.txt > temp.txt
 rm -f wl.txt
 rm -f pdnsf.txt
+perl -nlE 'say reverse split "([.])"' temp.txt > temp-reversed.txt
+rm -f temp.txt
+sort -i -s -o temp-sorted.txt temp-reversed.txt
+rm -f temp-reversed.txt
+perl -nlE 'say reverse split "([.])"' temp-sorted.txt > pDNSf-hosts.txt
+rm -f temp-sorted.txt
 
 
 
