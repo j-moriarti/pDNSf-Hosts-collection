@@ -1,1 +1,1 @@
-test split size
+test whitelist and new template.
