@@ -1,29 +1,38 @@
 <div align="center">
 
+#### In this Repo, I've created a shell script to automate the process of collecting and compiling all the Hosts from various sources, then cleaning and optimizing it to be used in ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/)
+#### This collection is suitable for blocking the domains containing ads, tracking, malware, phishing, ransomware, spyware, trojans and virus (for PC and Smartphones).
+<br>
+<br>
 
-#### The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found in my code: ["Download-and-Process-Hosts.sh"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/Download-and-Process-Hosts.sh)
+#### ⚠️ The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found in my code: ["Download-and-Process-Hosts.sh"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/Download-and-Process-Hosts.sh)
 #### The compiled hosts in this Repo are meant for my personal usage only. I have no responsibility about others misusing of these files.
 
-#### !!!YOU HAVE BEEN WARNED!!! :wink:
+#### ⚠️YOU HAVE BEEN WARNED⚠️ :wink:
  
  
-#### This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/) app. This [Open-Source](https://github.com/IngoZenz/personaldnsfilter) app can handle any number of Domains without affecting on ram usage! So there would be no problems adding these hosts to it!
+#### This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/) app. This [Open-Source](https://github.com/IngoZenz/personaldnsfilter) app can handle Huge number of Domains without affecting on battery or ram usage! So there would be no problems adding these hosts to it!
  
 
-##### !!! THIS HOSTS FILE IS EXTREMELY LARGE !!!
+##### !!! THIS HOSTS FILE IS EXTREMELY LARGE, and only pDNSf can easily handle it !!!
 
-##### !!! There is a high possibility of FALSE-POSITIVE or UNWANTED BLOCKING !!!
+##### !!! Although applied whitelists to remove falsely blocked domains, but There may be a possibility of FALSE-POSITIVE or UNWANTED BLOCKING !!!
 
 ##### !!! Be prepared for manual whitelisting in pDNSf !!!
 
 ##### !!!YOU HAVE BEEN WARNED AGAIN!!!
 
+<br>
+</br>
 
+#### ℹ️ Hosts Info
 <h4>
     
-    Number of Domains+IPs: 4,530,937
+    Number of Blocked Domains: 3,960,041
+    Domain Blocklist size: 94.8 MB
     
-    Hosts File Size: 93.4 MB
+    Number of Blocked IPs: 612,086
+    IP Blocklist size: 8.3 MB
     
     Auto Updates: Every 24 hours
     
@@ -32,14 +41,33 @@
 <br>
 </br>
 
+#### ℹ️ Updates & News 📢
+<h4>
+    
+    2021/03/13
+    📌 Implemented Whitelisting: For now I apply mkb2091's whitelist source!
+    📌 Also, the original Hosts is preserved, too (without applying whitelists)
+    You can find it in Section "B: (Manual Method)"
+    📌 To get statistics about the (input) sources used in this Repo, check 'stats' file.
+    📌 The previous Hosts releases and backups of the input sources (in compressed format) can be found in 'Releases' page, under tha tag 'v1.0.0-backup'
+    
+</h4>
+
+<br>
+</br>
+
 ### A: (Set & Forget Method)
 ### Download Hosts in multi-part (Domains-only Format)
+
 (Add these links directly to pDNSf config)
+
+(Also you can add IP blocklist, too.(links can be found at 'Extra Hosts' table below))
+
 | Name | Download Link | Mirror Link | Size |
 |:----:|:-------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | [Mirror (Part 0)](https://www.dl.dropboxusercontent.com/s/9jpe80edva776ei/pDNSf-hosts-part0.txt) | 35.0 MB |
 | pDNSf-hosts-part1.txt | [Domains (Part 1)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part1.txt) | [Mirror (Part 1)](https://www.dl.dropboxusercontent.com/s/d1x9nrjn8wmdgkn/pDNSf-hosts-part1.txt) | 35.0 MB |
-| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | [Mirror (Part 2)](https://www.dl.dropboxusercontent.com/s/500rbwazmyotd5c/pDNSf-hosts-part2.txt) | 23.4 MB |
+| pDNSf-hosts-part2.txt | [Domains (Part 2)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part2.txt) | [Mirror (Part 2)](https://www.dl.dropboxusercontent.com/s/500rbwazmyotd5c/pDNSf-hosts-part2.txt) | 24.8 MB |
 
 <br>
 </br>
@@ -47,9 +75,22 @@
 ### B: (Manual Method)
 ### Download GZip Compressed Hosts (Domains-only Format)
 (First, download and extract (uncompress) 'pDNSf-hosts.txt.gz' to somewhere, then add the LOCAL PATH of 'pDNSf-hosts.txt' to pDNSf config)
+
 | Name | Download Link | Mirror Link | Size |
 |:----:|:-------:|:-------:|:-------:|
-| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/0qkl500uldf0ryo/pDNSf-hosts.txt.gz) | 24.2 MB |
+| pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/0qkl500uldf0ryo/pDNSf-hosts.txt.gz) | 27.5 MB |
+| pDNSf-hosts_no-whitelist.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts_no-whitelist.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/0qkl500uldf0ryo/pDNSf-hosts.txt.gz) | 27.5 MB |
+
+ℹ️ Notes:
+<h4>
+    
+    📌 Example of a LOCAL PATH format in pDNSf:
+    PC version: file:///D:/Downloads folder/pDNSf-hosts.txt
+    Mobile version: file:///sdcard/Downloads/pDNSf-hosts.txt
+    
+    📌 Use "pDNSf-hosts_no-whitelist.txt.gz" if you want to use the Hosts without applying whitelists.
+    
+</h4>
 
 <br>
 </br>
@@ -58,8 +99,8 @@
 
 | Name | Download Link | Mirror Link | Size | # of Lines |
 |:---------:|:-------:|:--------:|:-------:|:-------:|
-| CIDR-IPs Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/ef6ya9o2wf0rqy0/CIDR-IPs.txt) | 46.1 KB | 2,943 |
+| CIDR-IPs Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/ef6ya9o2wf0rqy0/CIDR-IPs.txt) | 46.4 KB | 2,958 |
 | Wildcard Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/v1hdmolkekzevhl/Wildcards.txt) | 1.3 KB | 76 |
-| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/r7685b8ahxhro2d/just-IPs.txt) | 8.3 MB | 610,337 |
+| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/r7685b8ahxhro2d/just-IPs.txt) | 8.3 MB | 612,086 |
 
 </div>
