@@ -322,7 +322,8 @@ ipnum=$(wc -l < just-IPs.txt | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}
 echo "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)" | cat - just-IPs.txt > temp && mv temp just-IPs.txt
 
 hostssize=$(du -abc pDNSf-hosts.txt | print_size $(awk '{print $1}'))
-hostsnum=$(echo $[$(wc -l < pDNSf-hosts.txt)+$(wc -l < just-IPs.txt)] | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
+# hostsnum=$(echo $[$(wc -l < pDNSf-hosts.txt)+$(wc -l < just-IPs.txt)] | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
+hostsnum=$(echo $(wc -l < pDNSf-hosts.txt) | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 
 split -a 1 -C 35M -d pDNSf-hosts.txt pDNSf-hosts-part --additional-suffix=.txt
 
