@@ -21,9 +21,11 @@
 
 <h4>
     
-    Number of Domains+IPs: _hostsnum_
+    Number of Blocked Domains: _hostsnum_
+    Domain Blocklist size: _hostssize_
     
-    Hosts File Size: _hostssize_
+    Number of Blocked IPs: _ipnum_
+    IP Blocklist size: _ipsize_
     
     Auto Updates: Every 24 hours
     
@@ -34,7 +36,11 @@
 
 ### A: (Set & Forget Method)
 ### Download Hosts in multi-part (Domains-only Format)
+
 (Add these links directly to pDNSf config)
+
+(Also you can add IP blocklist,too.(links at 'Extra Hosts' table below))
+
 | Name | Download Link | Mirror Link | Size |
 |:----:|:-------:|:-------:|:-------:|
 | pDNSf-hosts-part0.txt | [Domains (Part 0)](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts-part0.txt) | [Mirror (Part 0)](https://www.dl.dropboxusercontent.com/s/9jpe80edva776ei/pDNSf-hosts-part0.txt) | _part0size_ |
@@ -47,9 +53,18 @@
 ### B: (Manual Method)
 ### Download GZip Compressed Hosts (Domains-only Format)
 (First, download and extract (uncompress) 'pDNSf-hosts.txt.gz' to somewhere, then add the LOCAL PATH of 'pDNSf-hosts.txt' to pDNSf config)
+
 | Name | Download Link | Mirror Link | Size |
 |:----:|:-------:|:-------:|:-------:|
 | pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/0qkl500uldf0ryo/pDNSf-hosts.txt.gz) | _gzsize_ |
+
+ℹ️ Note:
+
+Example of a LOCAL PATH format in pDNSf:
+
+PC version: file:///D:/Downloads folder/pDNSf-hosts.txt
+
+Mobile version: file:///sdcard/Downloads/pDNSf-hosts.txt
 
 <br>
 </br>
