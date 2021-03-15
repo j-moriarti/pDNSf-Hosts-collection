@@ -1,7 +1,7 @@
 <div align="center">
 
-#### In this Repo, I've created a shell script to automate the process of collecting and compiling all the Hosts from various sources, then cleaning and optimizing it to be used in ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/)
-#### This collection is suitable for blocking the domains containing ads, tracking, malware, phishing, ransomware, spyware, trojans and virus (for PC and Smartphones).
+##### In this Repo, I've created a shell script to automate the process of collecting and compiling all the Hosts from various sources, then cleaning and optimizing it to be used in ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/)
+##### This collection is suitable for blocking the domains containing ads, tracking, malware, phishing, ransomware, spyware, trojans and virus (for PC and Smartphones).
 
 #### ℹ️ Updates & News 📢
 <h4 align="left">
@@ -9,6 +9,7 @@
     2021/03/15
     📌 Implemented removing redundant subdomains!
     📌 Greatly reduced blocklist size without affecting the quality!(same blocking power)
+    📌 The original blocklist (without whitelisting / subdomains removing) is also available in Section "B: (Manual Method)"
     
     2021/03/13
     📌 Implemented Whitelisting: For now I apply mkb2091's whitelist source!
@@ -23,31 +24,27 @@
 <br>
 </br>
 
-#### ⚠️ The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found in my code: ["Download-and-Process-Hosts.sh"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/Download-and-Process-Hosts.sh)
-#### The compiled hosts in this Repo are meant for my personal usage only. I have no responsibility about others misusing of these files.
+### ⚠️ Disclaimer:
+The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found in my code: ["Download-and-Process-Hosts.sh"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/Download-and-Process-Hosts.sh). The compiled hosts in this Repo are meant for my personal usage only. I have no responsibility about others misusing of these files.
+###### ⚠️YOU HAVE BEEN WARNED⚠️ :wink:
 
-#### ⚠️YOU HAVE BEEN WARNED⚠️ :wink:
- 
- 
-#### This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/) app. This [Open-Source](https://github.com/IngoZenz/personaldnsfilter) app can handle Huge number of Domains without affecting on battery or ram usage! So there would be no problems adding these hosts to it!
- 
+This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/) app. This [Open-Source](https://github.com/IngoZenz/personaldnsfilter) app can handle Huge number of Domains without affecting on battery or ram usage! So there would be no problems adding these hosts to it!
+###### !!! THIS HOSTS FILE IS EXTREMELY LARGE, and only pDNSf can easily handle it !!!
+###### !!! Although applied whitelists to remove falsely blocked domains, but There may be a possibility of FALSE-POSITIVE or UNWANTED BLOCKING !!!
+###### !!! Be prepared for manual whitelisting in pDNSf !!!
+###### !!!YOU HAVE BEEN WARNED AGAIN!!!
 
-##### !!! THIS HOSTS FILE IS EXTREMELY LARGE, and only pDNSf can easily handle it !!!
-
-##### !!! Although applied whitelists to remove falsely blocked domains, but There may be a possibility of FALSE-POSITIVE or UNWANTED BLOCKING !!!
-
-##### !!! Be prepared for manual whitelisting in pDNSf !!!
-
-##### !!!YOU HAVE BEEN WARNED AGAIN!!!
-
-<br>
-</br>
 
 #### ℹ️ Hosts Info
 <h4>
+ 
+    [Original Blocklist]
+    Blocked Domains: _originalhostsnum_
+    Blocklist size: _originalhostssize_
     
-    Number of Blocked Domains: _hostsnum_
-    Domain Blocklist size: _hostssize_
+    [Optimized Blocklist 🚀]
+    Blocked Domains: _hostsnum_
+    Blocklist size: _hostssize_
     
     Number of Blocked IPs: _ipnum_
     IP Blocklist size: _ipsize_
@@ -83,7 +80,7 @@
 | Name | Download Link | Mirror Link | Size |
 |:----:|:-------:|:-------:|:-------:|
 | pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/0qkl500uldf0ryo/pDNSf-hosts.txt.gz) | _gzsize_ |
-| pDNSf-hosts_no-whitelist.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts_no-whitelist.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/b1dzuemxspu7j73/pDNSf-hosts_no-whitelist.txt.gz) | _gzsize_ |
+| pDNSf-hosts_no-whitelist.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts_no-whitelist.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/b1dzuemxspu7j73/pDNSf-hosts_no-whitelist.txt.gz) | _originalgzsize_ |
 
 ℹ️ Notes:
 <h4>
@@ -92,7 +89,7 @@
     PC version: file:///D:/Downloads folder/pDNSf-hosts.txt
     Mobile version: file:///sdcard/Downloads/pDNSf-hosts.txt
     
-    📌 Use "pDNSf-hosts_no-whitelist.txt.gz" if you want to use the Hosts without applying whitelists.
+    📌 Use "pDNSf-hosts_no-whitelist.txt.gz" if you want to use the Hosts without applying "whitelists" or "redundant subdomains removing".
     
 </h4>
 
