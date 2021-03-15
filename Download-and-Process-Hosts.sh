@@ -317,6 +317,8 @@ mv Processing-Phase/just-IPs.txt just-IPs.txt
 
 
 gzip -f -k -9 pDNSf-hosts_no-whitelist.txt
+originalhostssize=$(du -abc pDNSf-hosts_no-whitelist.txt | print_size $(awk '{print $1}'))
+originalhostsnum=$(echo $(wc -l < pDNSf-hosts_no-whitelist.txt) | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
 
 sed -i 's/^www\.//' whitelist_domains.txt
 sort -u -o wl.txt whitelist_domains.txt
@@ -384,7 +386,7 @@ gzip -f -9 pDNSf-hosts.txt
 gzsize=$(du -abc pDNSf-hosts.txt.gz | print_size $(awk '{print $1}'))
 
 rm -f readme.md
-sed -e "s/_hostssize_/$hostssize/g" -e "s/_hostsnum_/$hostsnum/g" -e "s/_wildcardsize_/$wildcardsize/g" -e "s/_wildcardnum_/$wildcardnum/g" -e "s/_cidrsize_/$cidrsize/g" -e "s/_cidrnum_/$cidrnum/g" -e "s/_ipsize_/$ipsize/g" -e "s/_ipnum_/$ipnum/g" -e "s/_part0size_/$part0size/g" -e "s/_part1size_/$part1size/g" -e "s/_part2size_/$part2size/g" -e "s/_gzsize_/$gzsize/g" template > readme.md
+sed -e "s/_originalhostssize_/$originalhostssize/g" -e "s/_originalhostsnum_/$originalhostsnum/g" -e "s/_hostssize_/$hostssize/g" -e "s/_hostsnum_/$hostsnum/g" -e "s/_wildcardsize_/$wildcardsize/g" -e "s/_wildcardnum_/$wildcardnum/g" -e "s/_cidrsize_/$cidrsize/g" -e "s/_cidrnum_/$cidrnum/g" -e "s/_ipsize_/$ipsize/g" -e "s/_ipnum_/$ipnum/g" -e "s/_part0size_/$part0size/g" -e "s/_part1size_/$part1size/g" -e "s/_part2size_/$part2size/g" -e "s/_gzsize_/$gzsize/g" template > readme.md
 
 
 mv sources-backup-*.zip output/backup/
