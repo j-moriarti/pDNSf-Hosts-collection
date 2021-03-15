@@ -2,8 +2,26 @@
 
 #### In this Repo, I've created a shell script to automate the process of collecting and compiling all the Hosts from various sources, then cleaning and optimizing it to be used in ["PersonalDNSfilter"](https://www.zenz-solutions.de/personaldnsfilter/)
 #### This collection is suitable for blocking the domains containing ads, tracking, malware, phishing, ransomware, spyware, trojans and virus (for PC and Smartphones).
+
+#### ℹ️ Updates & News 📢
+<h4 align="left">
+ 
+    2021/03/15
+    📌 Implemented removing redundant subdomains!
+    📌 Greatly reduced blocklist size without affecting the quality!(same blocking power)
+    
+    2021/03/13
+    📌 Implemented Whitelisting: For now I apply mkb2091's whitelist source!
+    📌 Also, the original Hosts is preserved, too (without applying whitelists)↩️
+       You can find it in Section "B: (Manual Method)"
+    📌 To get statistics about the (input) sources used in this Repo, check 'stats' file.
+    📌 The previous Hosts releases and backups of the input sources (in compressed format)↩️
+       can be found in 'Releases' page, under tha tag 'v1.0.0-backup'.
+    
+</h4>
+
 <br>
-<br>
+</br>
 
 #### ⚠️ The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found in my code: ["Download-and-Process-Hosts.sh"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/Download-and-Process-Hosts.sh)
 #### The compiled hosts in this Repo are meant for my personal usage only. I have no responsibility about others misusing of these files.
@@ -41,20 +59,6 @@
 <br>
 </br>
 
-#### ℹ️ Updates & News 📢
-<h4>
-    
-    2021/03/13
-    📌 Implemented Whitelisting: For now I apply mkb2091's whitelist source!
-    📌 Also, the original Hosts is preserved, too (without applying whitelists)
-    You can find it in Section "B: (Manual Method)"
-    📌 To get statistics about the (input) sources used in this Repo, check 'stats' file.
-    📌 The previous Hosts releases and backups of the input sources (in compressed format) can be found in 'Releases' page, under tha tag 'v1.0.0-backup'
-    
-</h4>
-
-<br>
-</br>
 
 ### A: (Set & Forget Method)
 ### Download Hosts in multi-part (Domains-only Format)
