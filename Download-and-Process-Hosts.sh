@@ -328,7 +328,8 @@ rm -f wl.txt
 rm -f pdnsf.txt
 perl -nlE 'say reverse split "([.])"' temp.txt > temp-reversed.txt
 rm -f temp.txt
-sort -i -s -o temp-sorted.txt temp-reversed.txt
+# Remove blocked subdomains from list, if the main domain is already blocked
+sort -i -s temp-reversed.txt | awk '{if (index($0,p)!=1) {print $0; p=$0".";}}' p=. > temp-sorted.txt
 rm -f temp-reversed.txt
 perl -nlE 'say reverse split "([.])"' temp-sorted.txt > pDNSf-hosts.txt
 rm -f temp-sorted.txt
