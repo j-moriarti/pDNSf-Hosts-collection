@@ -34,6 +34,8 @@ This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zen
 ###### !!! Be prepared for manual whitelisting in pDNSf !!!
 ###### !!!YOU HAVE BEEN WARNED AGAIN!!!
 
+<br>
+</br>
 
 #### ℹ️ Hosts Info
 <h4>
@@ -83,7 +85,7 @@ This hosts file is specially optimized for ["PersonalDNSfilter"](https://www.zen
 | pDNSf-hosts_no-whitelist.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts_no-whitelist.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/b1dzuemxspu7j73/pDNSf-hosts_no-whitelist.txt.gz) | _originalgzsize_ |
 
 ℹ️ Notes:
-<h4>
+<h4 align="left">
     
     📌 Example of a LOCAL PATH format in pDNSf:
     PC version: file:///D:/Downloads folder/pDNSf-hosts.txt
