@@ -310,23 +310,24 @@ rm -f pDNSf-hosts-part*.txt
 rm -f Wildcards.txt
 rm -f CIDR-IPs.txt
 rm -f just-IPs.txt
-mv Processing-Phase/6-final-output.txt pDNSf-hosts_no-whitelist.txt
+mv Processing-Phase/6-final-output.txt pDNSf-hosts-full.txt
 mv Processing-Phase/Wildcards.txt Wildcards.txt
 mv Processing-Phase/CIDR-IPs.txt CIDR-IPs.txt
 mv Processing-Phase/just-IPs.txt just-IPs.txt
 
 
 
-gzip -f -k -9 pDNSf-hosts_no-whitelist.txt
-originalhostssize=$(du -abc pDNSf-hosts_no-whitelist.txt | print_size $(awk '{print $1}'))
-originalhostsnum=$(echo $(wc -l < pDNSf-hosts_no-whitelist.txt) | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
+originalhostssize=$(du -abc pDNSf-hosts-full.txt | print_size $(awk '{print $1}'))
+originalhostsnum=$(echo $(wc -l < pDNSf-hosts-full.txt) | sed -E -e ':a' -e 's/([[:digit:]])([[:digit:]]{3}([^[:digit:]]|$))/\1,\2/;ta')
+echo -e "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.com/j-moriarti/pDNSf-Hosts-collection)\n# Package: Original version (no whitelists + no subdomains removal)" | cat - pDNSf-hosts-full.txt > pDNSf-hosts_no-whitelist.txt
+gzip -f -9 pDNSf-hosts_no-whitelist.txt
 originalgzsize=$(du -abc pDNSf-hosts_no-whitelist.txt.gz | print_size $(awk '{print $1}'))
 
 sed -i 's/^www\.//' whitelist_domains.txt
 sort -u -o wl.txt whitelist_domains.txt
 rm -f whitelist_domains.txt
-sort -o pdnsf.txt pDNSf-hosts_no-whitelist.txt
-rm -f pDNSf-hosts_no-whitelist.txt
+sort -o pdnsf.txt pDNSf-hosts-full.txt
+rm -f pDNSf-hosts-full.txt
 comm -23 pdnsf.txt wl.txt > temp.txt
 rm -f wl.txt
 rm -f pdnsf.txt
