@@ -1,1 +1,1 @@
-test subdomains removal.
+simple test
