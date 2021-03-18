@@ -6,6 +6,9 @@
 #### ℹ️ Updates & News 📢
 <h4 align="left">
  
+    2021/03/18
+    📌 Improved removing redundant subdomains! (thanks @badmojr for reporting 😉)
+    
     2021/03/15
     📌 Implemented removing redundant subdomains!
     📌 Greatly reduced blocklist size without affecting the quality!(same blocking power)
