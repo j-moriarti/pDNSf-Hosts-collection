@@ -333,11 +333,16 @@ rm -f wl.txt
 rm -f pdnsf.txt
 perl -nlE 'say reverse split "([.])"' temp.txt > temp-reversed.txt
 rm -f temp.txt
-# Remove blocked subdomains from list, if the main domain is already blocked
-sort -i -s temp-reversed.txt | awk '{if (index($0,p)!=1) {print $0; p=$0".";}}' p=. > temp-sorted.txt
+# Fix sort problem with priority of "-" character
+sed -i 's/-/\\/g' temp-reversed.txt
+sort -o temp-sorted.txt temp-reversed.txt
 rm -f temp-reversed.txt
-perl -nlE 'say reverse split "([.])"' temp-sorted.txt > pDNSf-hosts.txt
+sed -i 's/\\/-/g' temp-sorted.txt
+# Remove blocked subdomains from list, if the main domain is already blocked
+awk '{if (index($0,p)!=1) {print $0; p=$0".";}}' p=. temp-sorted.txt > temp-cleaned.txt
 rm -f temp-sorted.txt
+perl -nlE 'say reverse split "([.])"' temp-cleaned.txt > pDNSf-hosts.txt
+rm -f temp-cleaned.txt
 
 
 
