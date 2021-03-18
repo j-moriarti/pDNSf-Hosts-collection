@@ -1,1 +1,1 @@
-simple test
+test improved subdomains removing
