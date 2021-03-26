@@ -40,13 +40,17 @@ jobs:
         dest: /mirror/
         multiple: true
         mode: overwrite
+    - name: Generalize sources backup file name for mirror
+      run: cp output/backup/sources-backup-*.zip output/backup/sources-backup.zip
     - name: Upload Sources Backup to Mirror
       uses: deka0106/upload-to-dropbox@v2
       with:
         dropbox_access_token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
-        src: output/backup/sources-backup-*.zip
-        dest: /mirror/sources-backup.zip
+        src: output/backup/sources-backup.zip
+        dest: /mirror/
         mode: overwrite
+    - name: Cleanup
+      run: rm -f output/backup/sources-backup.zip
     - name: Upload Backups to release
       uses: svenstaro/upload-release-action@v2
       with:
