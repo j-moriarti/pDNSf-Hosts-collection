@@ -32,6 +32,21 @@ jobs:
     # Runs a single command using the runners shell
     - name: Proccessing Hosts...
       run: bash ./Download-and-Process-Hosts.sh
+    - name: Upload Hosts to Mirror (1/2)
+      uses: deka0106/upload-to-dropbox@v2
+      with:
+        dropbox_access_token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+        src: output/main/*.gz
+        dest: /mirror/
+        multiple: true
+        mode: overwrite
+    - name: Upload Sources Backup to Mirror
+      uses: deka0106/upload-to-dropbox@v2
+      with:
+        dropbox_access_token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+        src: output/backup/sources-backup-*.zip
+        dest: /mirror/sources-backup.zip
+        mode: overwrite
     - name: Upload Backups to release
       uses: svenstaro/upload-release-action@v2
       with:
@@ -50,11 +65,11 @@ jobs:
         overwrite: true
         file_glob: true
         body: "These files get automatically updated (and replaced) every 24 hours. (DON'T PAY ATTENTION TO THE RELEASE DATE WRITTEN ABOVE!!, RELEASE DATE IS MENTIONED AT THE FIRST LINE OF FILES!!)"
-    - name: Upload Hosts to Mirror
+    - name: Upload Hosts to Mirror (2/2)
       uses: deka0106/upload-to-dropbox@v2
       with:
         dropbox_access_token: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
-        src: output/main/*
+        src: output/main/*.txt
         dest: /mirror/
         multiple: true
         mode: overwrite
