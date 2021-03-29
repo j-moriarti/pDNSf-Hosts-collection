@@ -11,7 +11,7 @@ on:
   #    - '**.sh'
   #    - '**.yml'
   schedule:
-            - cron:  "0 7 * * *"
+            - cron:  "50 5 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
