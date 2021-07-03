@@ -33,8 +33,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Proccessing Hosts...
       run: |
-        chmod 777 ./sources.conf
-        chmod 777 ./Download-and-Process-Hosts.sh
         bash ./Download-and-Process-Hosts.sh
 
 #    - name: Upload Hosts to Mirror (1/2)
