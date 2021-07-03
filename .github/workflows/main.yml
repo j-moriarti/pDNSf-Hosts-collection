@@ -32,7 +32,10 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Proccessing Hosts...
-      run: bash ./Download-and-Process-Hosts.sh
+      run: |
+        chmod 777 ./sources.conf
+        chmod 777 ./Download-and-Process-Hosts.sh
+        bash ./Download-and-Process-Hosts.sh
 
 #    - name: Upload Hosts to Mirror (1/2)
 #      uses: deka0106/upload-to-dropbox@v2
