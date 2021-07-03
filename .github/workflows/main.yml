@@ -25,14 +25,15 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-      with:
-        lfs: true
-    - name: Checkout LFS objects
-      run: git lfs checkout
+    #  with:
+    #    lfs: true
+    #- name: Checkout LFS objects
+    #  run: git lfs checkout
 
     # Runs a single command using the runners shell
     - name: Proccessing Hosts...
       run: bash ./Download-and-Process-Hosts.sh
+
 #    - name: Upload Hosts to Mirror (1/2)
 #      uses: deka0106/upload-to-dropbox@v2
 #      with:
@@ -52,6 +53,7 @@ jobs:
 #        mode: overwrite
 #    - name: Cleanup
 #      run: rm -f output/backup/sources-backup.zip
+
     - name: Upload Backups to release
       uses: svenstaro/upload-release-action@v2
       with:
