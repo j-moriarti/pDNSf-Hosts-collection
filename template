@@ -4,9 +4,16 @@
 ##### This collection is suitable for blocking the domains containing ads, tracking, malware, phishing, ransomware, spyware, trojans and virus (for PC and Smartphones).
 
 #### ℹ️ Updates & News 📢
+<h4 align="left">
+ 
+    2021/07/03
+    📌 Implemented parallel downloading of sources.
+    📌 Separated the sources list from code.
+
+</h4>
  
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Expand to see previous changes!</summary>
   
   <h4 align="left">
  
