@@ -4,9 +4,16 @@
 ##### This collection is suitable for blocking the domains containing ads, tracking, malware, phishing, ransomware, spyware, trojans and virus (for PC and Smartphones).
 
 #### ℹ️ Updates & News 📢
+<h4 align="left">
+ 
+    2021/07/03
+    📌 Implemented parallel downloading of sources.
+    📌 Separated the sources list from code.
+
+</h4>
  
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Expand to see previous changes!</summary>
   
   <h4 align="left">
  
@@ -38,7 +45,7 @@
 <details>
   <summary>Click to expand!</summary>
   
-  The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found in my code: ["Download-and-Process-Hosts.sh"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/Download-and-Process-Hosts.sh). The compiled hosts in this Repo are meant for my personal usage only. I have no responsibility about others misusing of these files.
+  The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found here: ["sources.conf"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/sources.conf). The compiled hosts in this Repo are meant for my personal usage only. I have no responsibility about others misusing of these files.
   ###### ⚠️YOU HAVE BEEN WARNED⚠️ :wink:
 </details>
 
