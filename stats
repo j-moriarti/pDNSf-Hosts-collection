@@ -18,9 +18,9 @@ curben_phishing-filter-domains                     1 B   1
 curben_pup-filter-domains                          1 B   1
 curben_urlhaus-filter-domains                      1 B   1
 d43m0nhlint3r_agencyblocklist                      1 B   1
-dandelionsprout_antimalwarehosts                21.2 KB  729
-davidonzo_latestdomains                          1.6 KB  60
-davidonzo_latestips                             27.3 KB  1911
+dandelionsprout_antimalwarehosts                   1 B   1
+davidonzo_latestdomains                            1 B   1
+davidonzo_latestips                                1 B   1
 developerdan_ads-and-tracking-extended          11.8 MB  378402
 developerdan_amp-hosts-extended                549.4 KB  11894
 developerdan_tracking-aggressive-extended        1.8 MB  55887
@@ -34,7 +34,7 @@ energized_social-domains                       106.6 KB  3968
 energized_ultimate-domains                      22.0 MB  1015507
 energized_xtreme-domains                       174.5 KB  8681
 exodus-privacy_trackers                            1 B   1
-feodotracker_ipblocklist-recommended             3.4 KB  223
+feodotracker_ipblocklist-recommended               1 B   1
 filtri-dns_filtri                                  1 B   1
 firebog_joewein                                  1.2 MB  71856
 firebog_joeylane                               870.0 KB  44393
@@ -78,12 +78,12 @@ kriskintel-com_ktip_ransomware_feeds               1 B   1
 lassekongo83_frellwits-swedish-hosts-file       23.9 KB  838
 mailscanner-info_phishing-bad-sites                1 B   1
 majkiit_polish-ads-filter_hostfile              79.2 KB  3340
-mkb2091_domains                                 30.0 MB  1281203
-mkb2091_ip-blocklist                             8.1 MB  592286
+mkb2091_domains                                    1 B   1
+mkb2091_ip-blocklist                               1 B   1
 mkb2091_whitelist_domains                          1 B   1
 nextdns_cname-cloaking-blocklist                 1.2 KB  59
 notracking_dnscrypt-proxy.blacklist              5.9 MB  294809
-notracking_hostnames                             7.9 MB  258044
+notracking_hostnames                             7.8 KB  215
 oisd_dbl                                        19.6 MB  891699
 oisd_dbl_light                                   1.3 MB  71653
 olbat_ut1-blacklists_malware                       1 B   1
@@ -123,8 +123,8 @@ shadowwhisperer_marketing                       15.1 KB  495
 shadowwhisperer_microsoft                       21.3 KB  500
 shadowwhisperer_remote                           1.9 KB  112
 shadowwhisperer_scam                           324.2 KB  15581
-shadowwhisperer_tracking                       199.3 KB  10762
-shadowwhisperer_typo                             1.1 MB  73518
+shadowwhisperer_tracking                           1 B   1
+shadowwhisperer_typo                               1 B   1
 socram_notonmyshift_hosts                          1 B   1
 tg12_bad_packets_list                           24.6 KB  1764
 threatcrowd_feeds_domains                          1 B   1
@@ -132,4 +132,4 @@ xionkzn_blocklist_hosts                            1 B   1
 yhonay-antipopads                               14.2 KB  765
 zonefiles-io_compromised_ip_live                   1 B   1
 zznidar_bar-list                                   1 B   1
-total                                          147.5 MB  6702568
+total                                          100.2 MB  4484055
