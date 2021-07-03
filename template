@@ -45,7 +45,7 @@
 <details>
   <summary>Click to expand!</summary>
   
-  The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found in my code: ["Download-and-Process-Hosts.sh"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/Download-and-Process-Hosts.sh). The compiled hosts in this Repo are meant for my personal usage only. I have no responsibility about others misusing of these files.
+  The Hosts sources that are used in this Repository, have their own Licenses. The links of the HOSTS sources that are used in this repo (which includes their own licenses) can be found here: ["sources.conf"](https://github.com/j-moriarti/pDNSf-Hosts-collection/blob/master/sources.conf). The compiled hosts in this Repo are meant for my personal usage only. I have no responsibility about others misusing of these files.
   ###### ⚠️YOU HAVE BEEN WARNED⚠️ :wink:
 </details>
 
