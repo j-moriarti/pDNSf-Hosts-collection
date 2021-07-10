@@ -6,9 +6,8 @@
 #### ℹ️ Updates & News 📢
 <h4 align="left">
  
-    2021/07/03
-    📌 Implemented parallel downloading of sources.
-    📌 Separated the sources list from code.
+    2021/07/10
+    📌 Implemented personal Allow-List for falsely blocked domains.
 
 </h4>
  
@@ -17,6 +16,10 @@
   
   <h4 align="left">
  
+    2021/07/03
+    📌 Implemented parallel downloading of sources.(disabled by default due to github limitations)
+    📌 Separated the sources list from code.
+    
     2021/03/18
     📌 Improved removing redundant subdomains! (thanks @badmojr for reporting 😉)
     
