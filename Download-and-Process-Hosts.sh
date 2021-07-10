@@ -198,9 +198,12 @@ echo -e "# Updated on $currdate $currtime UTC - by J-Moriarti (https://github.co
 gzip -f -9 pDNSf-hosts_no-whitelist.txt
 originalgzsize=$(du -abc pDNSf-hosts_no-whitelist.txt.gz | print_size $(awk '{print $1}'))
 
-sed -i 's/^www\.//' whitelist_domains.txt
-sort -u -o wl.txt whitelist_domains.txt
+
+cat whitelist_domains.txt allow_list.txt | tr '[:upper:]' '[:lower:]' > whitelist.txt
 rm -f whitelist_domains.txt
+sed -i 's/^www\.//' whitelist.txt
+sort -u -o wl.txt whitelist.txt
+rm -f whitelist.txt
 sort -o pdnsf.txt pDNSf-hosts-full.txt
 rm -f pDNSf-hosts-full.txt
 comm -23 pdnsf.txt wl.txt > temp.txt
