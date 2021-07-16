@@ -29,11 +29,11 @@ cd RAW-Filters/
 rm -f COMBINED-RAW-HOSTS.TXT
 rm -f *.txt.raw
 
-# make sure the whitelist file will always be created (even if empty).
-touch mkb2091_whitelist_domains.txt.raw
+# make sure all source files will always be created (even if empty).
+sed '/^output *=/!d;s/^output *= *//' ../sources.conf | xargs touch
 
 # Download raw sources using the lists in 'sources.conf' file.
-curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 5 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -K ../sources.conf
+curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --retry-delay 3 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" -K ../sources.conf
 
 # Process some raw sources to be in correct format.
 sed -i 's/<.*$//;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' gameindustry_adobe-inc_hosts.txt.raw
