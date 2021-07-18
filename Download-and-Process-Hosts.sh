@@ -24,9 +24,10 @@ print_size () {
 idna_to_dns () {
     input=$1
     output=$2
-    sed '/[^\x00-\x7F]/d' $input > $output
-    input_list="$(sed '/[^\x00-\x7F]/!d' $input)"
-    python -c "exec(\"import sys\nhost = sys.argv[1:]\n[print(i.encode('idna').decode('utf8')) for i in host]\")" $input_list >> $output
+    LC_ALL=C sed '/[^\x00-\x7F]/d' $input > $output
+    input_list="$(LC_ALL=C sed '/[^\x00-\x7F]/!d' $input)"
+    python -c "exec(\"import sys\nhost = sys.argv[1:]\nfor i in host:\n    print(i.encode('idna').decode('utf8'))\")" $input_list >> $output
+    sed -i -e 's/\r\+$//' $output
 }
 
 rm -f -r output/
@@ -180,9 +181,10 @@ if [ $(wc -l < tld2.txt) -lt 1000 ]; then
     cp ../TLD-list.txt tld2.txt
 fi
 cat tld1.txt tld2.txt tld3.txt | tr '[:upper:]' '[:lower:]' > tldtmp1.txt
+sed -i '/^#/d;/.*/!d' tldtmp1.txt
 idna_to_dns "tldtmp1.txt" "tldtmp2.txt"
 sort -u -o tld.txt tldtmp2.txt
-echo $(sed '/^#/d;/.*/!d' tld.txt) | sed 's/ /\$\\\|\\\./g;s/.*/\/\\\.&\$\/\!d/' > sedconf
+echo $(cat tld.txt) | sed 's/ /\$\\\|\\\./g;s/.*/\/\\\.&\$\/\!d/' > sedconf
 sed -f sedconf temp-output.txt > 6-final-output.txt
 cp tld.txt ../TLD-list.txt
 rm -f sedconf temp-output.txt tld*.txt
