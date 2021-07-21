@@ -49,6 +49,8 @@ curl -L -R -s --compressed --connect-timeout 10 --retry 5 --retry-connrefused --
 # Process some raw sources to be in correct format.
 sed -i 's/<.*$//;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' gameindustry_adobe-inc_hosts.txt.raw
 sed -i '/^0\.0\.0\.0 /!d;s/^0\.0\.0\.0 //;s/<.*$//;s/ .*$//' gameindustry_amazon-com-inc_hosts.txt.raw gameindustry_staedte-gemeinden_hosts.txt.raw gameindustry_ministerien-behoerden_hosts.txt.raw
+sed '/^\"/!d;s/,.*$//;s/\"//g' amnestytech_investigations_2018-08-01_nso_indicators.csv.txt.raw > amnestytech_investigations_2018-08-01_nso_indicators.txt.raw
+rm -f amnestytech_investigations_2018-08-01_nso_indicators.csv.txt.raw
 
 
 #cat netlab-360_dga.txt.raw | sed '/^#/d' | awk '{print $2 }' > netlab-360_dga_domains.txt.raw
