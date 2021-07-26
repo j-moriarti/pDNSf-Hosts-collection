@@ -32,6 +32,8 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Proccessing Hosts...
+      env:
+        MY_ACTIONS: ${{ secrets.MY_ACTIONS_SECRET }}
       run: |
         bash ./Download-and-Process-Hosts.sh
 
