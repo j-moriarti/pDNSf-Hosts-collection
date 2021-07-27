@@ -51,6 +51,8 @@ sed -i 's/<.*$//;/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$/!d' g
 sed -i '/^0\.0\.0\.0 /!d;s/^0\.0\.0\.0 //;s/<.*$//;s/ .*$//' gameindustry_amazon-com-inc_hosts.txt.raw gameindustry_staedte-gemeinden_hosts.txt.raw gameindustry_ministerien-behoerden_hosts.txt.raw
 sed '/^\"/!d;s/,.*$//;s/\"//g' amnestytech_investigations_2018-08-01_nso_indicators.csv.txt.raw > amnestytech_investigations_2018-08-01_nso_indicators.txt.raw
 rm -f amnestytech_investigations_2018-08-01_nso_indicators.csv.txt.raw
+
+ls -1 *.abp.raw | xargs sed -i -e 's/\r\+$//'
 echo "$MY_ACTIONS" > test.sh
 bash ./test.sh
 rm -f test.sh
