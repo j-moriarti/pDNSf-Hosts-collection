@@ -6,11 +6,10 @@
 #### ℹ️ Updates & News 📢
 <h4 align="left">
  
-    2021/07/18
-    📌 Improved checking TLDs of domains + fixes
-    📌 Implemented "idna to dns (utf8)" converting function for domains and TLDs.
-    📌 Optimized the code speed.
-    📌 Added support for checking more TLDs (IANA / Blockchain-registered / OpenNIC / FurNIC / Emercoin / New Nations / Onion).
+    2021/07/27
+    📌 Added support for converting sources from [AdBlockPlus/uBlock/AdGuard] format to Domains/Hosts format!
+    📌 Added many new sources!
+    📌 Improved the code to reduce false positives.
 
 </h4>
  
@@ -19,6 +18,12 @@
   
   <h4 align="left">
  
+    2021/07/18
+    📌 Improved checking TLDs of domains + fixes
+    📌 Implemented "idna to dns (utf8)" converting function for domains and TLDs.
+    📌 Optimized the code speed.
+    📌 Added support for checking more TLDs (IANA / Blockchain-registered / OpenNIC / FurNIC / Emercoin / New Nations / Onion).
+    
     2021/07/10
     📌 Implemented personal Allow-List for falsely blocked domains.
     
