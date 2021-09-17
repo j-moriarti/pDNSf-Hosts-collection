@@ -65,6 +65,10 @@ rm -f test.sh
 sed 's/"network_signature": "/\n/g' exodus-privacy_trackers.json.raw | sed 's/", "website": "/\n/g;s/"}.*//;s/|/\n/g' | sed 's/\\\\//g;s/^\.//;s/^https*:\/\///;s/:.*//;s/\/.*//;s/\.$/\.\*/;s/\.\./\./;s/\[0-9\]//g;/\./!d;/{\|^$\|^github\.com$\|^twitter\.com$\|^en\.wikipedia\.org$\|^www\.mozilla\.org$\|^wiki\.mozilla\.org$\|^developer\.amazon\.com$\|^www\.developer\.amazon\.com$\|^cloud\.google\.com$\|^www\.adobe\.com$\|^developers\.google\.com$\|^google\.com$\|^www\.google\.com$\|^www\.googletagmanager\.com$\|^azure\.microsoft\.com$\|^docs\.microsoft\.com$/d;' | sort -u -o exodus-privacy_trackers.txt.raw
 rm -f exodus-privacy_trackers.json.raw
 
+tar -xf ALL-phishing-domains.tar.gz ./ALL-phishing-domains.txt
+mv ALL-phishing-domains.txt mitchellkrogza_phishing-database_all.txt.raw
+rm -f ALL-phishing-domains.tar.gz
+
 #gzip -N -d dga-feed.gz
 #sed 's/,Domain .*$//' dga-feed-all.csv > dga-feed.txt.raw
 #rm -f dga-feed-all.csv
