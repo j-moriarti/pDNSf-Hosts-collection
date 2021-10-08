@@ -26,8 +26,10 @@ idna_to_dns () {
     output=$2
     LC_ALL=C sed '/[^\x00-\x7F]/d' $input > $output
     input_list="$(LC_ALL=C sed '/[^\x00-\x7F]/!d' $input)"
-    python -c "exec(\"import sys\nhost = sys.argv[1:]\nfor i in host:\n    print(i.encode('idna').decode('utf8'))\")" $input_list >> $output
+    python -c "exec(\"import sys\nhost = sys.argv[1:]\nfor i in host:\n    try:\n        print(i.encode('idna').decode('utf8'))\n    except Exception as e:\n        print('#invalid domain: ', i)\")" $input_list >> $output
     sed -i -e 's/\r\+$//' $output
+    sed '/^#invalid domain/!d' $output
+    sed -i '/^#invalid domain/d' $output
 }
 
 rm -f -r output/
