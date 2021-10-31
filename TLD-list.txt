@@ -891,6 +891,7 @@ mtpc
 mtr
 mu
 museum
+music
 mutual
 mutuelle
 mv
