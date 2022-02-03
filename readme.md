@@ -83,15 +83,15 @@
 <h4>
  
     [Original Blocklist]
-    Blocked Domains: 3,720,052
-    Blocklist size: 84.8 MB
+    Blocked Domains: 3,712,377
+    Blocklist size: 84.7 MB
     
     [Optimized Blocklist 🚀]
-    Blocked Domains: 2,219,571
-    Blocklist size: 47.1 MB
+    Blocked Domains: 2,222,720
+    Blocklist size: 47.2 MB
     
-    Number of Blocked IPs: 370,099
-    IP Blocklist size: 5.0 MB
+    Number of Blocked IPs: 371,695
+    IP Blocklist size: 5.1 MB
     
     Auto Updates: Every 24 hours
     
@@ -124,7 +124,7 @@
 | Name | Download Link | Mirror Link | Size |
 |:----:|:-------:|:-------:|:-------:|
 | pDNSf-hosts.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/0qkl500uldf0ryo/pDNSf-hosts.txt.gz) | 14.1 MB |
-| pDNSf-hosts_no-whitelist.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts_no-whitelist.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/b1dzuemxspu7j73/pDNSf-hosts_no-whitelist.txt.gz) | 21.7 MB |
+| pDNSf-hosts_no-whitelist.txt.gz | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/pDNSf-hosts_no-whitelist.txt.gz) | [Mirror](https://www.dl.dropboxusercontent.com/s/b1dzuemxspu7j73/pDNSf-hosts_no-whitelist.txt.gz) | 21.6 MB |
 
 ℹ️ Notes:
 
@@ -150,8 +150,8 @@
 
 | Name | Download Link | Mirror Link | Size | # of Lines |
 |:---------:|:-------:|:--------:|:-------:|:-------:|
-| CIDR-IPs Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/ef6ya9o2wf0rqy0/CIDR-IPs.txt) | 73.6 KB | 4,705 |
-| Wildcard Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/v1hdmolkekzevhl/Wildcards.txt) | 7.1 KB | 406 |
-| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/r7685b8ahxhro2d/just-IPs.txt) | 5.0 MB | 370,099 |
+| CIDR-IPs Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/CIDR-IPs.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/ef6ya9o2wf0rqy0/CIDR-IPs.txt) | 73.4 KB | 4,695 |
+| Wildcard Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/Wildcards.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/v1hdmolkekzevhl/Wildcards.txt) | 9.1 KB | 491 |
+| IP Addresses Block-List | [Download](https://github.com/j-moriarti/pDNSf-Hosts-collection/releases/download/v1.0.0/just-IPs.txt) | [Mirror](https://www.dl.dropboxusercontent.com/s/r7685b8ahxhro2d/just-IPs.txt) | 5.1 MB | 371,695 |
 
 </div>
