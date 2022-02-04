@@ -114,8 +114,8 @@ done
 echo -e "Name \n____________________________________________" > tmp3
 du -abc *.txt.raw | awk '{print $2 }' | sed 's/\.txt\.raw$//' >> tmp3
 
-paste tmp3 tmp2 | column -s $'\t' -t > tmp4
-paste tmp4 tmp1 | column -s $'\t' -t > stats
+paste tmp1 tmp2 | column -s $'\t' -t > tmp4
+paste tmp4 tmp3 | column -s $'\t' -t > stats
 #paste tmp3 tmp5 | column -s $'\t' -t > stats
 rm -f tmp1
 rm -f tmp2
