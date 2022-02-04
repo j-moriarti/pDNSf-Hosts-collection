@@ -2,7 +2,7 @@ Domains     Size     Name
 ________  _________  ____________________________________________
 1852        23.2 KB  abpindo_indonesianadblockrules
 18231      454.0 KB  abpvn
-88           2.1 KB  adblockplus_easylistitaly
+89           2.1 KB  adblockplus_easylistitaly
 85           2.0 KB  adblockplus_easylistpolish
 47           1.2 KB  adblockplus_easylistspanish
 4             51 B   adblockplus_indianlist
@@ -47,7 +47,7 @@ ________  _________  ____________________________________________
 6901       108.5 KB  bigdargon_hostsVN_filters
 16375      413.3 KB  bigdargon_hostsVN_hosts
 4651        65.3 KB  binarydefense_banlist
-21102      293.7 KB  blocklist.de_lists_all
+21091      293.5 KB  blocklist.de_lists_all
 88           2.4 KB  blocklistproject_lists_smart-tv-nl
 3894        82.9 KB  botvrij_blocklist_domain
 550          9.4 KB  botvrij_ioclist_domain
@@ -92,7 +92,7 @@ ________  _________  ____________________________________________
 20           397 B   fanboy_enhancedstats
 29705      544.1 KB  fanboy_fanboy-ultimate
 50           678 B   farrokhi_adblock-iran_filter
-325          4.9 KB  feodotracker_ipblocklist-recommended
+326          4.9 KB  feodotracker_ipblocklist-recommended
 408         10.6 KB  filtri-dns_filtri
 397          9.7 KB  firebog_Openphish
 12535      213.4 KB  firebog_cybercrime
@@ -234,7 +234,7 @@ ________  _________  ____________________________________________
 5             58 B   stanev_adblock_bulgarian
 1764        24.6 KB  tg12_bad_packets_list
 3471        54.1 KB  threatcrowd_feeds_domains
-2407        66.6 KB  threatfox_hostfile
+2409        66.7 KB  threatfox_hostfile
 22           339 B   tomasko126_easylistczechandslovak
 62           1.3 KB  troysjanda_uboxpi
 3             30 B   ublockorigin_filters_annoyances
@@ -250,4 +250,4 @@ ________  _________  ____________________________________________
 570          7.9 KB  zonefiles-io_compromised_ip_live
 117          1.9 KB  zoso_rolist
 287          4.3 KB  zznidar_bar-list
-7735462    179.4 MB  total
+7735455    179.4 MB  total
