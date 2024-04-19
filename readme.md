@@ -80,7 +80,7 @@
 </br>
 
 #### ℹ️ Hosts Info
-<h4>
+<h4 align="center">
  
     [Original Blocklist]
     Blocked Domains: 4,220,049
